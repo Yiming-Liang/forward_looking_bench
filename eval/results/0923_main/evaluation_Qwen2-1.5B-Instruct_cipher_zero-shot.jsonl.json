@@ -1,0 +1,1752 @@
+[
+    {
+        "idx": "1",
+        "response": "[[JKP]]",
+        "response_text": "[[JKP]]",
+        "answer": "[[N]]",
+        "is_correct": false
+    },
+    {
+        "idx": "2",
+        "response": "[[V]]",
+        "response_text": "[[V]]",
+        "answer": "[[I]]",
+        "is_correct": false
+    },
+    {
+        "idx": "3",
+        "response": "```rust\nlet plaintext = \"B\";\nlet alphabet = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nlet reversed_alphabet = \"ZYXWVUTSRQPONMLKJIHGFEDCBA\";\n\n// Encryption\nlet standard_alphabet = alphabet.to_lowercase();\nlet substitution_alphabet = alphabet.to_lowercase();\nlet reversed_alphabet = reversed_alphabet.to_lowercase();\n\nlet plaintext_prime = plaintext.to_lowercase();\n\nlet mut ciphertext = String::from(plaintext_prime);\n\n// Encryption Steps\nfor letter in plaintext_prime.to_lowercase().chars() {\n    match reversed_alphabet.chars().position(|c| c == letter) {\n        Some(pos) => {\n            let new_letter = std::iter::from_fn(move || {\n                let iter = alphabet.chars();\n                let ref mut iter = iter.by_ref();\n                let next = iter.next();\n                if !next {\n                    None\n                } else {\n                    *iter\n                }\n            })\n            .nth(pos - 1)\n            .unwrap();\n            let shift = reversed_alphabet.find(new_letter) as isize;\n            let shifted = ascii::to_ascii_simple(new_letter) as isize + shift;\n\n            let shifted_char = alphabet[std::cmp::min(shifted as usize, alphabet.len() - 1)];\n            ciphertext.push(shifted_char);\n        }\n        None => {\n            eprintln!(\"Invalid character encountered in plaintext\");\n            break;\n        }\n    }\n}\n\n```",
+        "response_text": "[[std::cmp::min(shifted as usize, alphabet.len() - 1)]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "4",
+        "response": "[PLAIN]",
+        "response_text": "[[PLAIN]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "5",
+        "response": "[[SDEpfh!aCIbDf]]",
+        "response_text": "[[SDEpfh!aCIbDf]]",
+        "answer": "[[I]]",
+        "is_correct": false
+    },
+    {
+        "idx": "6",
+        "response": "[Ciphertext]",
+        "response_text": "[[Ciphertext]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "7",
+        "response": "[[\"HE\"]]",
+        "response_text": "[[\"HE\"]]",
+        "answer": "[[WC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "8",
+        "response": "[[PZ]]",
+        "response_text": "[[PZ]]",
+        "answer": "[[EM]]",
+        "is_correct": false
+    },
+    {
+        "idx": "9",
+        "response": "[[\"NJSWZYNYHFZ\"]]\n\nInput plaintext: \"TNKGPHLSYPV\"\n- Preparation: standard_alphabet, reversed_alphabet, substitution_alphabet\n- Encryption steps:\n    - Z is mapped to D, A is mapped to Y, so \"N\" is mapped to \"S\", \"T\" is mapped to \"J\", \"P\" is mapped to \"N\".\n    - Forward 4 places in standard_alphabet order gives the cipher text string NJSWZYNYHFZ.\n\nThe encrypted answer is: [\"NJSWZYNYHFZ\"]\n\n[encrypted answer]",
+        "response_text": "[[\"NJSWZYNYHFZ\"]]",
+        "answer": "[[GOSXMWQIHMC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "10",
+        "response": "[['JAFHJYLKEBPGQ']]\n\n**Explanation:**\n- The encryption step shifts each letter D3 in standard alphabet to J.\n- This shift maps the letter to 'A'.\n- Thus, 'D' maps to 'A'.\n- This substitution maps 'A' to 'E'.\n- The standard alphabet shift maps the letter to 'B'.\n- The solution returns the encrypted letters in a reversed, shuffled cipher format.",
+        "response_text": "[['JAFHJYLKEBPGQ']]",
+        "answer": "[[IAFHDBXNMYE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "11",
+        "response": "[!]",
+        "response_text": "[[!]]",
+        "answer": "[[3]]",
+        "is_correct": false
+    },
+    {
+        "idx": "12",
+        "response": "[[Uppercase letters string]]",
+        "response_text": "[[Uppercase letters string]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "13",
+        "response": "[[!]...]\n\nThe encryption rule does not apply to lowercase letters, and the \"Plaintext\" variable provided is not upper case. The ciphertext should remain uppercase for encryption.",
+        "response_text": "[[[!]]",
+        "answer": "[[+]]",
+        "is_correct": false
+    },
+    {
+        "idx": "14",
+        "response": "[[E]]",
+        "response_text": "[[E]]",
+        "answer": "[[Z]]",
+        "is_correct": false
+    },
+    {
+        "idx": "15",
+        "response": "[!] [!]",
+        "response_text": "[[!]]",
+        "answer": "[[2]]",
+        "is_correct": false
+    },
+    {
+        "idx": "16",
+        "response": "[[Q]]",
+        "response_text": "[[Q]]",
+        "answer": "[[O]]",
+        "is_correct": false
+    },
+    {
+        "idx": "17",
+        "response": "[!]#$%^&*加剧...",
+        "response_text": "[[!]]",
+        "answer": "[[^_]]",
+        "is_correct": false
+    },
+    {
+        "idx": "18",
+        "response": "[[UB]]",
+        "response_text": "[[UB]]",
+        "answer": "[[UX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "19",
+        "response": "[['Q', 'Q', 'Q', 'Q', 'Q', 'Q', 'Q', 'Q']]",
+        "response_text": "[['Q', 'Q', 'Q', 'Q', 'Q', 'Q', 'Q', 'Q']]",
+        "answer": "[[$1~%34!*:2@]]",
+        "is_correct": false
+    },
+    {
+        "idx": "20",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[RHWXPNDXVIX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "21",
+        "response": "[[2^1]]",
+        "response_text": "[[2^1]]",
+        "answer": "[[4^3]]",
+        "is_correct": false
+    },
+    {
+        "idx": "22",
+        "response": "[DECRYPTED]",
+        "response_text": "[[DECRYPTED]]",
+        "answer": "[[B]]",
+        "is_correct": false
+    },
+    {
+        "idx": "23",
+        "response": "[[leetcode]]\n[[programpi]]",
+        "response_text": "[[leetcode]]",
+        "answer": "[[6^1]]",
+        "is_correct": false
+    },
+    {
+        "idx": "24",
+        "response": "[UPPERCASE LETTER]",
+        "response_text": "[[UPPERCASE LETTER]]",
+        "answer": "[[P]]",
+        "is_correct": false
+    },
+    {
+        "idx": "25",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[8^3]]",
+        "is_correct": false
+    },
+    {
+        "idx": "26",
+        "response": "[[Uppercase letters string]]",
+        "response_text": "[[Uppercase letters string]]",
+        "answer": "[[W]]",
+        "is_correct": false
+    },
+    {
+        "idx": "27",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[8^26^3]]",
+        "is_correct": false
+    },
+    {
+        "idx": "28",
+        "response": "[[UPPERCASE LETTER]]",
+        "response_text": "[[UPPERCASE LETTER]]",
+        "answer": "[[FG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "29",
+        "response": "To follow the instructions provided to you, I must explain my process in detail. My approach is as follows: first, I will generate a Multitap Code Table, analyze your given encrypted text to recover the original uppercase letters from the Multitap Code, and then output them in their correct alphabetic form.\n\n### Cipher Rule Calculation:\n\n**Encryption Rules:**\n\n1. Plaintext: \"ZYRHKKGNPDL\"\n2. Keyword (Untouched): No keyword for encryption\n3. Ciphertext: \"ZYRHKKGNPDL\"\n\n**Multitap Code Table:**\n\n| Letter | Multitap Code |\n| --- | --- |\n| A | 2^1 |\n| B | 2^2 |\n| C | 2^3 |\n| D | 3^1 |\n| E | 3^2 |\n| F | 3^3 |\n| G | 4^1 |\n| H | 4^2 |\n| I | 4^3 |\n| J | 5^1 |\n| K | 5^2 |\n| L | 5^3 |\n| M | 6^1 |\n| N | 6^2 |\n| O | 6^3 |\n| P | 7^1 |\n| Q | 7^2 |\n| R | 7^3 |\n| S | 7^4 |\n| T | 8^1 |\n| U | 8^2 |\n| V | 8^3 |\n| W | 9^1 |\n| X | 9^2 |\n| Y | 9^3 |\n| Z | 9^4 |\n\n**Encryption Steps:**\n\n- For each given plaintext character p:\n    - If p is an uppercase letter and exists in the Multitap Code Table:\n        - Replace p with the corresponding Multitap Code from the Multitap Code Table.\n\nAES\n\n**Decryption Rules:**\n\n1. Ciphertext: \"ZYRHKKGNPDL\"\n2. Keyword (Untouched): No keyword for decryption\n3. Plaintext: Uppercase letters string.\n\n**Multitap Code Table:**\n\n| Letter | Multitap Code |\n| --- | --- |\n| A | 2^1 |\n| B | 2^2 |\n| C | 2^3 |\n| D | 3^1 |\n| E | 3^2 |\n| F | 3^3 |\n| G | 4^1 |\n| H | 4^2 |\n| I | 4^3 |\n| J | 5^1 |\n| K | 5^2 |\n| L | 5^3 |\n| M | 6^1 |\n| N | 6^2 |\n| O | 6^3 |\n| P | 7^1 |\n| Q | 7^2 |\n| R | 7^3 |\n| S | 7^4 |\n| T | 8^1 |\n| U | 8^2 |\n| V | 8^3 |\n| W | 9^1 |\n| X | 9^2 |\n| Y | 9^3 |\n| Z | 9^4 |\n\n**Decryption Steps:**\n\n- For each given ciphertext Multitap Code c:\n    - If c is a Multitap Code from the Multitap Code Table:\n        - Replace c with the corresponding uppercase letter from the Multitap Code Table.\n\n**Encrypted Answer:** [ZYRHKKGNPDL]",
+        "response_text": "[[ZYRHKKGNPDL]]",
+        "answer": "[[9^49^37^34^25^25^24^16^27^13^15^3]]",
+        "is_correct": false
+    },
+    {
+        "idx": "30",
+        "response": "[[AZERTYUIOPQRS]",
+        "response_text": "[[[AZERTYUIOPQRS]]",
+        "answer": "[[DZNMSIYVROT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "31",
+        "response": "[[\"U\"]]",
+        "response_text": "[[\"U\"]]",
+        "answer": "[[22]]",
+        "is_correct": false
+    },
+    {
+        "idx": "32",
+        "response": "[[F.T.R.]",
+        "response_text": "[[[F.T.R.]]",
+        "answer": "[[C]]",
+        "is_correct": false
+    },
+    {
+        "idx": "33",
+        "response": "[[\"X\"]]",
+        "response_text": "[[\"X\"]]",
+        "answer": "[[13]]",
+        "is_correct": false
+    },
+    {
+        "idx": "34",
+        "response": "[[R T X F S]]",
+        "response_text": "[[R T X F S]]",
+        "answer": "[[Y]]",
+        "is_correct": false
+    },
+    {
+        "idx": "35",
+        "response": "## [R6US]",
+        "response_text": "[[R6US]]",
+        "answer": "[[53]]",
+        "is_correct": false
+    },
+    {
+        "idx": "36",
+        "response": "[[Uxxx]]",
+        "response_text": "[[Uxxx]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "37",
+        "response": "[JS]",
+        "response_text": "[[JS]]",
+        "answer": "[[2354]]",
+        "is_correct": false
+    },
+    {
+        "idx": "38",
+        "response": "[[SUDOPIUM]]",
+        "response_text": "[[SUDOPIUM]]",
+        "answer": "[[KL]]",
+        "is_correct": false
+    },
+    {
+        "idx": "39",
+        "response": "It appears there are some typographical errors or inconsistencies in your cipher instructions. Normally, a cipher's rules would specify how each character of the plaintext should be transformed to produce the corresponding ciphertext character. However, based on the provided cipher rules, the rules seem incorrect for both encryption and decryption stages.\n\nI'd appreciate it if you could provide correct instructions or clarify the rules again so I could assist with your query accurately.",
+        "response_text": "NULL",
+        "answer": "[[3343254341142543244366]]",
+        "is_correct": false
+    },
+    {
+        "idx": "40",
+        "response": "[[MONKEY]]",
+        "response_text": "[[MONKEY]]",
+        "answer": "[[BXKWYFUTVLB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "41",
+        "response": "[[M]]",
+        "response_text": "[[M]]",
+        "answer": "[[E]]",
+        "is_correct": false
+    },
+    {
+        "idx": "42",
+        "response": "[[L]]",
+        "response_text": "[[L]]",
+        "answer": "[[I]]",
+        "is_correct": false
+    },
+    {
+        "idx": "43",
+        "response": "[[Convert from Understanding? :question: ? Please read the instructions carefully as there is a mistake in the given cipher rule indicating that X -> 0. Therefore, the following answer is correct based on the corrected rule: \nCiphertext: EXXXXZX\nDecryptedAnswer: \"MYCEAL\"",
+        "response_text": "NULL",
+        "answer": "[[A]]",
+        "is_correct": false
+    },
+    {
+        "idx": "44",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "45",
+        "response": "[[Z]]",
+        "response_text": "[[Z]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "46",
+        "response": "[[K]]",
+        "response_text": "[[K]]",
+        "answer": "[[U]]",
+        "is_correct": false
+    },
+    {
+        "idx": "47",
+        "response": "```python\n[[N]]\n```",
+        "response_text": "[[N]]",
+        "answer": "[[XR]]",
+        "is_correct": false
+    },
+    {
+        "idx": "48",
+        "response": "[[VE]]",
+        "response_text": "[[VE]]",
+        "answer": "[[TO]]",
+        "is_correct": false
+    },
+    {
+        "idx": "49",
+        "response": "[[\"VTUKKIBWCGL\"]]",
+        "response_text": "[[\"VTUKKIBWCGL\"]]",
+        "answer": "[[FVKUULSCARJ]]",
+        "is_correct": false
+    },
+    {
+        "idx": "50",
+        "response": "[[O, Z, R, O, D, T, O, P, E]]",
+        "response_text": "[[O, Z, R, O, D, T, O, P, E]]",
+        "answer": "[[KDGRRAMOXLG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "51",
+        "response": "[[Q]]",
+        "response_text": "[[Q]]",
+        "answer": "[[C]]",
+        "is_correct": false
+    },
+    {
+        "idx": "52",
+        "response": "[[H]]",
+        "response_text": "[[H]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "53",
+        "response": "[[E]]",
+        "response_text": "[[E]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "54",
+        "response": "[[G]]",
+        "response_text": "[[G]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "55",
+        "response": "```python\nplaintext = \"M\"\nkey = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n\n# Decryption Steps\ndecrypted_plaintext = \"\"\nkey_list = list(key)\ncipher_key = input(\"Enter decryption keystream (letters from 'J' to 'X'): \")\n\nciphered_plaintext = \"\"\n\nfor char in plaintext:\n    x = key_list.index(char)\n    y = key.index(cipher_key[x])\n    decrypted_plaintext += chr((x + y) % 26)\n\ncipher_key_set_decimal_floor = int(cipher_key) % 26\nciphertext = input(\"Enter ciphertext (uppercase letters): \")\n\nciphertext_accurate = \"\"\nfor char in ciphertext:\n    z = cipher_key_set_decimal_floor + key_list.index(char.upper())\n    encrypted_characters = key[z:z + len(ciphertext)]\n    ciphertext_accurate += encrypted_characters\n\nprint(f\"Ciphertext: {ciphertext_accurate}\")\nprint(f\"Decrypted Plaintext: Encryption Error: {decrypted_plaintext}\")\n```",
+        "response_text": "[[x]]",
+        "answer": "[[L]]",
+        "is_correct": false
+    },
+    {
+        "idx": "56",
+        "response": "[['X']]",
+        "response_text": "[['X']]",
+        "answer": "[[B]]",
+        "is_correct": false
+    },
+    {
+        "idx": "57",
+        "response": "[[T]]",
+        "response_text": "[[T]]",
+        "answer": "[[UH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "58",
+        "response": "[[PB]]",
+        "response_text": "[[PB]]",
+        "answer": "[[TE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "59",
+        "response": "[[\"ADDING\"]]",
+        "response_text": "[[\"ADDING\"]]",
+        "answer": "[[IETIIBUXQTN]]",
+        "is_correct": false
+    },
+    {
+        "idx": "60",
+        "response": "[[WNCASYDMI]]",
+        "response_text": "[[WNCASYDMI]]",
+        "answer": "[[EVGASVBCSTK]]",
+        "is_correct": false
+    },
+    {
+        "idx": "61",
+        "response": "[[\"Q\"]]\n\nPlease note that the plaintext is \"B\" which should be encrypted using the specified rules. The decryption key was not provided in this task, thus no decryption operation could be performed.",
+        "response_text": "[[\"Q\"]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "62",
+        "response": "[SecurityError]",
+        "response_text": "[[SecurityError]]",
+        "answer": "[[Y]]",
+        "is_correct": false
+    },
+    {
+        "idx": "63",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[R]]",
+        "is_correct": false
+    },
+    {
+        "idx": "64",
+        "response": "[[B]]",
+        "response_text": "[[B]]",
+        "answer": "[[P]]",
+        "is_correct": false
+    },
+    {
+        "idx": "65",
+        "response": "[[V]]",
+        "response_text": "[[V]]",
+        "answer": "[[H]]",
+        "is_correct": false
+    },
+    {
+        "idx": "66",
+        "response": "[[L]]",
+        "response_text": "[[L]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "67",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[MD]]",
+        "is_correct": false
+    },
+    {
+        "idx": "68",
+        "response": "[[PR]]",
+        "response_text": "[[PR]]",
+        "answer": "[[ZG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "69",
+        "response": "[[TIBASICXUGQPLOXUHBVCNMURQGPXOGFQVQ]]",
+        "response_text": "[[TIBASICXUGQPLOXUHBVCNMURQGPXOGFQVQ]]",
+        "answer": "[[LZHDZNLFCPA]]",
+        "is_correct": false
+    },
+    {
+        "idx": "70",
+        "response": "[[GMKVQPNWTZ]]",
+        "response_text": "[[GMKVQPNWTZ]]",
+        "answer": "[[ACBOUFZDOKT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "71",
+        "response": "[[\"ZZP\"]]\n\n**Explanation:**\n\nThe key is shorter than the plaintext, so we repeat the key (and thus the key letter) twice (to avoid split letters in the key). The encryption steps take the plaintext character \"O\", find the corresponding cipher alphabet (IV), find the position of \"O\" in the cipher alphabet which is in the same position as in the standard alphabet (\"Y\"), and output the plaintext character \"Y\".\n\nSo, the encrypted ciphertext will be \"ZY\", and since both the plaintext and the ciphertext should be in the format [lowercase letters string without punctuation and spaces], we repeat the operation three times to get [\"ZY\"] and append \"ZY\" to the response. String concatenation is achieved using double square brackets.",
+        "response_text": "[[\"ZZP\"]]",
+        "answer": "[[E]]",
+        "is_correct": false
+    },
+    {
+        "idx": "72",
+        "response": "[[HTA]]",
+        "response_text": "[[HTA]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "73",
+        "response": "[[AXCY]]",
+        "response_text": "[[AXCY]]",
+        "answer": "[[J]]",
+        "is_correct": false
+    },
+    {
+        "idx": "74",
+        "response": "[[T]]",
+        "response_text": "[[T]]",
+        "answer": "[[D]]",
+        "is_correct": false
+    },
+    {
+        "idx": "75",
+        "response": "[[YN]]",
+        "response_text": "[[YN]]",
+        "answer": "[[H]]",
+        "is_correct": false
+    },
+    {
+        "idx": "76",
+        "response": "[[MOM]]",
+        "response_text": "[[MOM]]",
+        "answer": "[[T]]",
+        "is_correct": false
+    },
+    {
+        "idx": "77",
+        "response": "[[PABGQ]\"\"\"MMCMQRBMZ\"]]",
+        "response_text": "[[PABGQ]\"\"\"MMCMQRBMZ\"]]",
+        "answer": "[[CG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "78",
+        "response": "[[SN]]",
+        "response_text": "[[SN]]",
+        "answer": "[[KK]]",
+        "is_correct": false
+    },
+    {
+        "idx": "79",
+        "response": "[[\"OGZCTEVBDCF\"]]\n[[\"GZCF\"], [\"EBDC\"], [\"TDE\"], [\"CTV\"], [\"VBR\"], [\"CFZ\"], [\"EGR\"]]",
+        "response_text": "[[\"OGZCTEVBDCF\"]]",
+        "answer": "[[BTRRBZBARIQ]]",
+        "is_correct": false
+    },
+    {
+        "idx": "80",
+        "response": "[[YZ_SOUDRYIRQDXY]]",
+        "response_text": "[[YZ_SOUDRYIRQDXY]]",
+        "answer": "[[EMGXENUDEPA]]",
+        "is_correct": false
+    },
+    {
+        "idx": "81",
+        "response": "[[Q]]",
+        "response_text": "[[Q]]",
+        "answer": "[[Z]]",
+        "is_correct": false
+    },
+    {
+        "idx": "82",
+        "response": "[[X]]",
+        "response_text": "[[X]]",
+        "answer": "[[T]]",
+        "is_correct": false
+    },
+    {
+        "idx": "83",
+        "response": "[[UUH]]",
+        "response_text": "[[UUH]]",
+        "answer": "[[V]]",
+        "is_correct": false
+    },
+    {
+        "idx": "84",
+        "response": "[[HUG]]",
+        "response_text": "[[HUG]]",
+        "answer": "[[H]]",
+        "is_correct": false
+    },
+    {
+        "idx": "85",
+        "response": "[[\"B\"]]",
+        "response_text": "[[\"B\"]]",
+        "answer": "[[T]]",
+        "is_correct": false
+    },
+    {
+        "idx": "86",
+        "response": "[plaintext]",
+        "response_text": "[[plaintext]]",
+        "answer": "[[A]]",
+        "is_correct": false
+    },
+    {
+        "idx": "87",
+        "response": "[[\"QWERTYUIPOQWERTYUIPOQWERTYUIPOQWERTYUIO\"]]\n \nEncrypted answer: \"QWERTYUIPOQWERTYUIPOQWERTYUIPOQWERTYUIO\"\n\nExplanation:\n- The inner disc rotates 1 character, and it rotates to the right by 5 characters. Therefore, the inner disc will be \"LMNOPQRS\".\n- The outer disc is initialized with the encrypted characters (\"ToqNa\"), and it is rotated to the right by 5 characters. After the encryption, the outer disk becomes \"NMOPQSTGV\" and after decryption, it becomes the plaintext \"PZ\".",
+        "response_text": "[[\"QWERTYUIPOQWERTYUIPOQWERTYUIPOQWERTYUIO\"]]",
+        "answer": "[[MY]]",
+        "is_correct": false
+    },
+    {
+        "idx": "88",
+        "response": "[[VAVAVAA]]",
+        "response_text": "[[VAVAVAA]]",
+        "answer": "[[UA]]",
+        "is_correct": false
+    },
+    {
+        "idx": "89",
+        "response": "[[\"TOXHMMUMYQVNZARDGPE\"]]",
+        "response_text": "[[\"TOXHMMUMYQVNZARDGPE\"]]",
+        "answer": "[[LFOUSYSXRYC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "90",
+        "response": "[[SMSUHYZRZWYSF]]",
+        "response_text": "[[SMSUHYZRZWYSF]]",
+        "answer": "[[SPSMHSNKECE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "91",
+        "response": "[[LMKWTOV]]",
+        "response_text": "[[LMKWTOV]]",
+        "answer": "[[R]]",
+        "is_correct": false
+    },
+    {
+        "idx": "92",
+        "response": "[[O]]",
+        "response_text": "[[O]]",
+        "answer": "[[Z]]",
+        "is_correct": false
+    },
+    {
+        "idx": "93",
+        "response": "Bracketed answer: [[XT]]",
+        "response_text": "[[XT]]",
+        "answer": "[[S]]",
+        "is_correct": false
+    },
+    {
+        "idx": "94",
+        "response": "[[L]]",
+        "response_text": "[[L]]",
+        "answer": "[[O]]",
+        "is_correct": false
+    },
+    {
+        "idx": "95",
+        "response": "[MIT]",
+        "response_text": "[[MIT]]",
+        "answer": "[[G]]",
+        "is_correct": false
+    },
+    {
+        "idx": "96",
+        "response": "[[\"G\"]]\n\nThe decrypted message is: \"G\"",
+        "response_text": "[[\"G\"]]",
+        "answer": "[[I]]",
+        "is_correct": false
+    },
+    {
+        "idx": "97",
+        "response": "[[IY]]",
+        "response_text": "[[IY]]",
+        "answer": "[[GG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "98",
+        "response": "[[WUD]]",
+        "response_text": "[[WUD]]",
+        "answer": "[[PC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "99",
+        "response": "[[\"VJGHWNMIDUOSL\"]]",
+        "response_text": "[[\"VJGHWNMIDUOSL\"]]",
+        "answer": "[[VYJKWLWLKNO]]",
+        "is_correct": false
+    },
+    {
+        "idx": "100",
+        "response": "[[INIPHERUGHNVW]*#]]",
+        "response_text": "[[INIPHERUGHNVW]*#]]",
+        "answer": "[[EZZAPHSSBWH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "101",
+        "response": "[[AV]]",
+        "response_text": "[[AV]]",
+        "answer": "[[PF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "102",
+        "response": "[[VH]]",
+        "response_text": "[[VH]]",
+        "answer": "[[FS]]",
+        "is_correct": false
+    },
+    {
+        "idx": "103",
+        "response": "[[UUPRCM] [FLY RL [TKSY RGHS S A YZ])]",
+        "response_text": "[[[UUPRCM]]",
+        "answer": "[[UF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "104",
+        "response": "[[GT]]",
+        "response_text": "[[GT]]",
+        "answer": "[[TN]]",
+        "is_correct": false
+    },
+    {
+        "idx": "105",
+        "response": "[[\"B\", \"A\", \"U\"]]\n\nNote: In this case, the ciphertext is already unique as it perfectly fits the limitations of the cipher. The plaintext and ciphertext have been successfully encrypted and decrypted.",
+        "response_text": "[[\"B\", \"A\", \"U\"]]",
+        "answer": "[[RD]]",
+        "is_correct": false
+    },
+    {
+        "idx": "106",
+        "response": "[[CB]]",
+        "response_text": "[[CB]]",
+        "answer": "[[LS]]",
+        "is_correct": false
+    },
+    {
+        "idx": "107",
+        "response": "[[S]]\n\nNote: The decryption rule assumes that the plaintext is the same as the ciphertext in this specific case, as determined by the given format.",
+        "response_text": "[[S]]",
+        "answer": "[[RL]]",
+        "is_correct": false
+    },
+    {
+        "idx": "108",
+        "response": "[[IX]]",
+        "response_text": "[[IX]]",
+        "answer": "[[UP]]",
+        "is_correct": false
+    },
+    {
+        "idx": "109",
+        "response": "[[KFDRLPGTDNLMBAUDSKEWWV]]",
+        "response_text": "[[KFDRLPGTDNLMBAUDSKEWWV]]",
+        "answer": "[[KNVPOVBHFFOH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "110",
+        "response": "[CHL VYVGUMR HE]",
+        "response_text": "[[CHL VYVGUMR HE]]",
+        "answer": "[[LXXKIKLWECBX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "111",
+        "response": "[[Uppercase letters string without punctuation and spaces : \"Uppercase letters string without punctuation and spaces : B\"]].",
+        "response_text": "[[Uppercase letters string without punctuation and spaces : \"Uppercase letters string without punctuation and spaces : B\"]]",
+        "answer": "[[4785]]",
+        "is_correct": false
+    },
+    {
+        "idx": "112",
+        "response": "[THE_PHRASE]",
+        "response_text": "[[THE_PHRASE]]",
+        "answer": "[[EX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "113",
+        "response": "[[DB./..]]",
+        "response_text": "[[DB./..]]",
+        "answer": "[[8985]]",
+        "is_correct": false
+    },
+    {
+        "idx": "114",
+        "response": "[PLAINTEXT]",
+        "response_text": "[[PLAINTEXT]]",
+        "answer": "[[CB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "115",
+        "response": "[[.--.--]]",
+        "response_text": "[[.--.--]]",
+        "answer": "[[576]]",
+        "is_correct": false
+    },
+    {
+        "idx": "116",
+        "response": "[[Uppercase letters string]]",
+        "response_text": "[[Uppercase letters string]]",
+        "answer": "[[RH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "117",
+        "response": "[[\"V\", \"/-\", \"/-..\", \"/\", \"/\", \"-./\", \"/./.\"]]\n[/-, \"/-..\", \"/./.\", \"/-./\", \"/-)], [\".\", \"-./\", \"/-.\", \"/-\", \"-.\"), [\"/.\", \"-\", \"-.\"], [], [\".-\", \"/./-\", \"/\", \"\\/\".]]\n[/-, \"/-..\", \"/./.\", \"/-./\", \"/-)), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"/\", \"-/\", \"-/-\"), [\"/-\", \"-/./\", \"-/,\"]]\n[[\"-\", \"/-\", \"/-\", \"/-\"), [\"/-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"/-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-), [\"-\", \"/-\", \"/-\", \"/-\"), [\"-\", \"/-\", \"/-\", \"/-), [\"-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"-\", \"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"-\", \"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-), [\"/-\", \"/-\", \"/-\", \"/-)]\n\n\\[, [[\",\"\", \"\\\\/\", \"\\\\/\", \"-\\-\", \"-\\-\", \"\\\\\", \"\\\\\", \"\\\\\\\\\", \"|||\\\"]]\n\\,, [[\", \"\\\\/\", \"\\\\/\", \"||||\", \"||\", \"\\ \\\\\", \"|/\"]);\n\\,, [[\", \"\\\\/\", \"\\\\/\", \"|\", \"\\\\\", \"|\", \"|\"]]\n.., [\"\\\", \"- /\", \"- /\", \"|\", \"|\", \"|\", \"- /\"]);\n...\n\\,, [[\", \"\\\\/\", \"||\"]\n\\,, [[\", \"\\\\/\", \"|\"]\n\\,, [[\", \"||\"...\n\\,, [[\", \"\\\\/\", \"|\"]\n\\,, [[\", \"||\"...\n\\,, [[\", \"||\"...\n\\,, [[\", \"||\"...\n\\[, [[\", \"||\"...\n\\,, [[\", \"\\\\/\", |-...\n\\,, \\[[\", \"||\"...\n\nThe cipher rule states that we should perform encryption on the plaintext. Since the original text contains no numbers or special characters, we do not need to make any modifications. The plaintext is the uppercase letters without punctuation and spaces.\n\nTherefore:\n\nCiphertext: \"VO\"\n\nHere's the encrypted answer in the required format:\n\n[[[\"VO\"]]]",
+        "response_text": "[[\"V\", \"/-\", \"/-..\", \"/\", \"/\", \"-./\", \"/./.\"]]",
+        "answer": "[[5416]]",
+        "is_correct": false
+    },
+    {
+        "idx": "118",
+        "response": "[[PLAINTEXT]]",
+        "response_text": "[[PLAINTEXT]]",
+        "answer": "[[PE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "119",
+        "response": "[[.----.--..----,-...-.\"]],[[-.--.-.-.--]],[.....-];\n\n\nHere is the encrypted answer:\n\nEncryption Steps:\n1. Convert each character \"IVWANCXRTWU\" into Morse code..-.-.----.,-.-------\n2. Divide Morse code into two pairs of characters. The processed pair is the comprehensive Morse code .----.--..----,-...-\n3. The last character rounded off is represented by '.-' after the last Morse code defined as 4.\n4. i.e., the encrypted string has the format: .----.--..----,-...-.----.--..----,-...- .\n\nHere is the ciphertext.\n\nDecryption Steps:\n1. Each .----.--..----,-...- character converts to the alphabet digit character 4.\n2. Obtain the Morse code for each character by splitting the .----. .-.---. .-.---... by /.\n3. Convert the Morse code of the combined Morse code .----. .-.---. .-.---... to the corresponding .OA result digit. As, .OA represents A in human-dictionary. The similar result is obtained for the other digits.\n\ni.e., .----. .-.---. .-.---... is converted to A. \n\nHence, the plaintext is AOA which is Epigram.\n\nTherefore, the encrypted plaintext is [\"Epigram\"].",
+        "response_text": "[[.----.--..----,-...-.\"]]",
+        "answer": "[[53574741988157497475-]]",
+        "is_correct": false
+    },
+    {
+        "idx": "120",
+        "response": "[[plaintext: Beef]]",
+        "response_text": "[[plaintext: Beef]]",
+        "answer": "[[FFODKPXWYWN]]",
+        "is_correct": false
+    },
+    {
+        "idx": "121",
+        "response": "[[BZ]]",
+        "response_text": "[[BZ]]",
+        "answer": "[[NU]]",
+        "is_correct": false
+    },
+    {
+        "idx": "122",
+        "response": "[SA]",
+        "response_text": "[[SA]]",
+        "answer": "[[OZ]]",
+        "is_correct": false
+    },
+    {
+        "idx": "123",
+        "response": "[[]]",
+        "response_text": "[[]]",
+        "answer": "[[MI]]",
+        "is_correct": false
+    },
+    {
+        "idx": "124",
+        "response": "[WX]",
+        "response_text": "[[WX]]",
+        "answer": "[[XT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "125",
+        "response": "[BD]",
+        "response_text": "[[BD]]",
+        "answer": "[[WQ]]",
+        "is_correct": false
+    },
+    {
+        "idx": "126",
+        "response": "[[XZ]]",
+        "response_text": "[[XZ]]",
+        "answer": "[[KP]]",
+        "is_correct": false
+    },
+    {
+        "idx": "127",
+        "response": "[[TF]]",
+        "response_text": "[[TF]]",
+        "answer": "[[CN]]",
+        "is_correct": false
+    },
+    {
+        "idx": "128",
+        "response": "```py\nplaintext = \"VU\"\nciphertext = \"VU\"\n\n# Decryption Steps\ndecrypted_answer = []\n# quote point is a placeholder for the decrypted answer\ndecrypted_answer.append(['quote point'])\n\n# Decryption\nfor row1, col1, row2, col2 in zip(ciphertext[::2], ciphertext[1::2], row1=cr[1], col1=cr[0]):\n    # Find original coordiates\n    # If (row1, col1) is (0, 4), (row2, col2) is (1, 2) corresponds to \"X\"\n    if row1 == 0 and col1 == 4 and row2 == 1 and col2 == 2:\n        decrypted_answer[-1].append('$')\n        decrypted_answer[-1].append('X')\n    # If (row1, col1) is (1, 3), (row2, col2) is (2, 2) corresponds to \"R\"\n    elif row1 == 1 and col1 == 3 and row2 == 2 and col2 == 2:\n        decrypted_answer[-1].append('\\\\')\n        decrypted_answer[-1].append('R')\n    # Otherwise, \"B\" based on specified row and column arrangement\n    else:\n        decrypted_answer[-1].append(chr(ord('A') + (row1 + 1) // 5 + col1 + 1))\n        decrypted_answer[-1].append('B')\n\nencrypted_answer = [\"\".join(s) for s in decrypted_answer].replace(\"$\", \"\").replace('R', '').replace('B', '')\ndecrypted_answer = [[s for s in encrypted_answer if s != ',']]",
+        "response_text": "[[s for s in encrypted_answer if s != ',']]",
+        "answer": "[[VU]]",
+        "is_correct": false
+    },
+    {
+        "idx": "129",
+        "response": "[[YOLHBMUFFWVT]]",
+        "response_text": "[[YOLHBMUFFWVT]]",
+        "answer": "[[YIFFYYLXAFB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "130",
+        "response": "[REET]",
+        "response_text": "[[REET]]",
+        "answer": "[[ISXHRPSNZCW]]",
+        "is_correct": false
+    },
+    {
+        "idx": "131",
+        "response": "It seems like the message \"KN\" doesn't meet the requirements since it's not clear how entries are organized or what's left after removing spaces and punctuation. It would be helpful for you to provide more details or corrections in the plaintext. Once understood, I'll proceed with the encryption according to your input specifications.",
+        "response_text": "NULL",
+        "answer": "[[848898898]]",
+        "is_correct": false
+    },
+    {
+        "idx": "132",
+        "response": "[[HAE]]",
+        "response_text": "[[HAE]]",
+        "answer": "[[MC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "133",
+        "response": "[[1895213215]]",
+        "response_text": "[[1895213215]]",
+        "answer": "[[244898898]]",
+        "is_correct": false
+    },
+    {
+        "idx": "134",
+        "response": "[[TH]]",
+        "response_text": "[[TH]]",
+        "answer": "[[BM]]",
+        "is_correct": false
+    },
+    {
+        "idx": "135",
+        "response": "[[AES256 cipher text]]",
+        "response_text": "[[AES256 cipher text]]",
+        "answer": "[[844898898]]",
+        "is_correct": false
+    },
+    {
+        "idx": "136",
+        "response": "[[TH]]",
+        "response_text": "[[TH]]",
+        "answer": "[[AU]]",
+        "is_correct": false
+    },
+    {
+        "idx": "137",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[595898898]]",
+        "is_correct": false
+    },
+    {
+        "idx": "138",
+        "response": "[[TH]]",
+        "response_text": "[[TH]]",
+        "answer": "[[GC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "139",
+        "response": "[[415233818]]",
+        "response_text": "[[415233818]]",
+        "answer": "[[320146657286230198]]",
+        "is_correct": false
+    },
+    {
+        "idx": "140",
+        "response": "[[HIGB]]",
+        "response_text": "[[HIGB]]",
+        "answer": "[[RKHCSDHLHOY]]",
+        "is_correct": false
+    },
+    {
+        "idx": "141",
+        "response": "[[JAI]]",
+        "response_text": "[[JAI]]",
+        "answer": "[[GT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "142",
+        "response": "\\[ [\\text{WB}] \\]",
+        "response_text": "[[[\\text{WB}]]",
+        "answer": "[[W]]",
+        "is_correct": false
+    },
+    {
+        "idx": "143",
+        "response": "[[[R]]]]",
+        "response_text": "[[[R]]",
+        "answer": "[[WT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "144",
+        "response": "[[H]]",
+        "response_text": "[[H]]",
+        "answer": "[[H]]",
+        "is_correct": true
+    },
+    {
+        "idx": "145",
+        "response": "[[WBDGR]]",
+        "response_text": "[[WBDGR]]",
+        "answer": "[[WB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "146",
+        "response": "[MB]",
+        "response_text": "[[MB]]",
+        "answer": "[[M]]",
+        "is_correct": false
+    },
+    {
+        "idx": "147",
+        "response": "[[AH]]",
+        "response_text": "[[AH]]",
+        "answer": "[[GTMH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "148",
+        "response": "[MEBE]",
+        "response_text": "[[MEBE]]",
+        "answer": "[[SE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "149",
+        "response": "[[\"MNGLBNB\", \"DSMNFSE\", \"ZWVQQ\", \"BUFOAA\"], [\"INEURRFCQ\", \"NSUOILAE\", \"MAXIN\", \"XTFVGBHRYNGYBOolBMM\"))]",
+        "response_text": "[[[\"MNGLBNB\", \"DSMNFSE\", \"ZWVQQ\", \"BUFOAA\"]]",
+        "answer": "[[KHGBBIKTKTBBWTMEBEMBWI]]",
+        "is_correct": false
+    },
+    {
+        "idx": "150",
+        "response": "[[MBGIBBMHBEGTGEKB]]",
+        "response_text": "[[MBGIBBMHBEGTGEKB]]",
+        "answer": "[[WWMUBXDEAOK]]",
+        "is_correct": false
+    },
+    {
+        "idx": "151",
+        "response": "[[B#K#VKC#y#D]]",
+        "response_text": "[[B#K#VKC#y#D]]",
+        "answer": "[[B*I*V*K*C*]]",
+        "is_correct": false
+    },
+    {
+        "idx": "152",
+        "response": "[HELLO(TEST[\"]D]]\n[[H E L L O]_TEST \",D]]\n[[ KEEP THIS ]., DISC ]RM\",\" ]\n[[ D ON T   E R R   T T ]] O ]\n[[ F I L E   D   M   ]]\n[[ Y   R   T   S \"\"\"\" ]] W   R   T   O ]\n[[ s   #   ]   G ]] ] WR ]] \"\"\n\nHere's the decimal answer:\n\n[[Hello, World]]\n\nLet me know, please!",
+        "response_text": "[[H E L L O]_TEST \",D]]",
+        "answer": "[[MCCVE]]",
+        "is_correct": false
+    },
+    {
+        "idx": "153",
+        "response": "[[\"GSPKAPGX\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"))[[GSPKAPGXSTDGSPKAPGXSD\"));[[GSPKAPGXSTDGSPKAPGXSD\"));[[GSPKAPGXSTDGSPKAPGXSD)));[[GSPKAPGXSTDGSPKAPGXSD]));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD)))[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD))[[GSPKAPGXSTDGSPKAPGXSD);[[GSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHT)\"ABCDEFGHIJKLMNOPQRSTUVWXYZ]][[GSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHTS\" [{\"index\":0,\"encrypted\":\"GSPKAPGX\"},{\"index\":1,\"encrypted\":\"GDWNNH\"} ]]",
+        "response_text": "[[\"GSPKAPGX\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"][[GSPKAPGXSTDGSPKAPGXSD\"))[[GSPKAPGXSTDGSPKAPGXSD\"));[[GSPKAPGXSTDGSPKAPGXSD\"));[[GSPKAPGXSTDGSPKAPGXSD)));[[GSPKAPGXSTDGSPKAPGXSD]));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD)))[[GSPKAPGXSTDGSPKAPGXSD));[[GSPKAPGXSTDGSPKAPGXSD))[[GSPKAPGXSTDGSPKAPGXSD);[[GSPKAPGXGD]SHTGSPKAPGXGD]SHTGSPKAPGXGD]SHT)\"ABCDEFGHIJKLMNOPQRSTUVWXYZ]]",
+        "answer": "[[G*SX*PG*KP*A#*]]",
+        "is_correct": false
+    },
+    {
+        "idx": "154",
+        "response": "[[KW. SUCCESS AND LIFE GOES ON]]\n\nExplanation:\n1. Two ways to fill in the first plaintext in the first position of the first line. Then two other plaintexts are filled, and then some more filling after the two plaintexts, which finally got the original message, namely \"C*KW*VA*HC*B#*\".\n\nThis is correctly reflected in the decrypted line-by-line process of the rule.",
+        "response_text": "[[KW. SUCCESS AND LIFE GOES ON]]",
+        "answer": "[[CKVHBCAW]]",
+        "is_correct": false
+    },
+    {
+        "idx": "155",
+        "response": "[[\"#\", \"#\", \"#\", \"#\", \"#\"],\n [\"#\", \"#\", \"#\", \"#\", \"#\"],\n [\"#\", \"-\", \"--\", \">\", \"<\"],\n [\"#\", \"#\", \"#\", \"#\", \"#\"],\n [\"#\", \"#\", \"#\", \"#\", \"#\"]\n]",
+        "response_text": "[[[\"#\", \"#\", \"#\", \"#\", \"#\"]]",
+        "answer": "[[AD#*EZI*VRH*RI*C#*]]",
+        "is_correct": false
+    },
+    {
+        "idx": "156",
+        "response": "[HELLIWORLDCF]",
+        "response_text": "[[HELLIWORLDCF]]",
+        "answer": "[[RTXFXDOYEYY]]",
+        "is_correct": false
+    },
+    {
+        "idx": "157",
+        "response": "[] [[BZFTSKSOVDSYRYLLZRSL]]",
+        "response_text": "[[BZFTSKSOVDSYRYLLZRSL]]",
+        "answer": "[[BV#Z#*ZODLR*FSSLS*TKYYL*S#R#*]]",
+        "is_correct": false
+    },
+    {
+        "idx": "158",
+        "response": "[[KKK#H#*OMHHE#RMNFR#*ZSVCH#M#A#*]]",
+        "response_text": "[[KKK#H#*OMHHE#RMNFR#*ZSVCH#M#A#*]]",
+        "answer": "[[KORZMSMMKHNVACFHHERH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "159",
+        "response": "[[HL#*ERD*LO*LW*O#*]]",
+        "response_text": "[[HL#*ERD*LO*LW*O#*]]",
+        "answer": "[[OK#T#P#E#*YPYLHPTVR*VLLUACIHA*ZNYVRSKZ*P#L#N#X#*]]",
+        "is_correct": false
+    },
+    {
+        "idx": "160",
+        "response": "To proceed with the decryption, we will follow the decryption steps provided in the cipher rule:\n\n1. Divide the ciphertext into five lines.\n2. Extract and read the first line, which contains a promissory note that reads: **BF#V#Z#H#*MSDNSC,ETZYKNUCB*SKSRZMGF#.**\n\n3. Read down to the last decrypted line, starting with the first line (\"*\") since it's clearer than reading up, using the results from the previous line and the spaces between them between the lines to reconstruct each group's contents.\nUsage:\n- The first line after reading is **The definition of the note**, shorter, rather than expandable back through the blocks, so we break it down as it reads: \"BDentoH#ERDTer4\".\n\n4. The decryptions & preconditions followed five lines of rows. The plaintext can now be reconstructed.\n\nOutput:\n```plaintext\nTHEDEFINITIONOFNOTHINGHOPE\n```\n\nTherefore, after decryption, the plaintext is **THEDEFINITIONOFNOTHINGHOPE**. The answer is encapsulated in double square brackets indicating the plaintext is **[[THEDEFINITIONOFNOTHINGHOPE]]**.",
+        "response_text": "[[THEDEFINITIONOFNOTHINGHOPE]]",
+        "answer": "[[BFESBKTSFXZSPRYFVNKZVMNMZDUGDFCSHCB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "161",
+        "response": "[[\"PX\"], [\"E\", \"L\"], [\"M\", \"EP\"], [\"H\", \" XN\"], [\"OL\", \"ETS\"], [\"HE\", \"LW\"], [\"M\", \"E\"], [\"NW\", \"PX\"]]",
+        "response_text": "[[\"PX\"], [\"E\", \"L\"], [\"M\", \"EP\"], [\"H\", \" XN\"], [\"OL\", \"ETS\"], [\"HE\", \"LW\"], [\"M\", \"E\"], [\"NW\", \"PX\"]]",
+        "answer": "[[P#X#L#E#M#]]",
+        "is_correct": false
+    },
+    {
+        "idx": "162",
+        "response": "[[LIDAHWOLLEORLD]]",
+        "response_text": "[[LIDAHWOLLEORLD]]",
+        "answer": "[[HXCON]]",
+        "is_correct": false
+    },
+    {
+        "idx": "163",
+        "response": "[[ICYWTO]]",
+        "response_text": "[[ICYWTO]]",
+        "answer": "[[I#C#YF#WA#TO#]]",
+        "is_correct": false
+    },
+    {
+        "idx": "164",
+        "response": "[[FMHUTW]]",
+        "response_text": "[[FMHUTW]]",
+        "answer": "[[OCFHWTUM]]",
+        "is_correct": false
+    },
+    {
+        "idx": "165",
+        "response": "[[\"PFGC\", \"#\", \"AFF\"], [\"ZGLAC\", \"#\", \"IY\"], [\"VZ\", \"#\", \"WEGO\"]]\n\nIn the solution, the \"PFGCZGLACVZ\" was encoded into \"PFGC[AFF]ZGLAC[IY]VZ\" using the described encryption rules.\n\n---\n\nThis is the template you should use to capstone your response:\n\n```markdown\n### encrypted answer:\n[[encrypted answer]]\n```",
+        "response_text": "[[\"PFGC\", \"#\", \"AFF\"], [\"ZGLAC\", \"#\", \"IY\"], [\"VZ\", \"#\", \"WEGO\"]]",
+        "answer": "[[PVZ#FC#GA#CL#ZG#]]",
+        "is_correct": false
+    },
+    {
+        "idx": "166",
+        "response": "[[IXXYGPOLKE]]",
+        "response_text": "[[IXXYGPOLKE]]",
+        "answer": "[[TTIIUXKROTW]]",
+        "is_correct": false
+    },
+    {
+        "idx": "167",
+        "response": "[[\"XZURHLXFKBLMLKIMOYAN\"], [\"XXZXRHLLXIKMLKINOYAN\"], [\"LXUXZRRIQHILACLKMOY\"], [\"XLXZURINIQCLAIKMOYL\"], [\"XXURINIQCLAIKMYXIONXYZURHLXFKBLMLKIMOYAN\"]]",
+        "response_text": "[[\"XZURHLXFKBLMLKIMOYAN\"], [\"XXZXRHLLXIKMLKINOYAN\"], [\"LXUXZRRIQHILACLKMOY\"], [\"XLXZURINIQCLAIKMOYL\"], [\"XXURINIQCLAIKMYXIONXYZURHLXFKBLMLKIMOYAN\"]]",
+        "answer": "[[XBLN#ZKMA#UFLY#RXKO#HLIM#]]",
+        "is_correct": false
+    },
+    {
+        "idx": "168",
+        "response": "[[LIDAHELLOWORLD]]",
+        "response_text": "[[LIDAHELLOWORLD]]",
+        "answer": "[[WZKPNIZLCFSHHZELOIXF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "169",
+        "response": "[[\"TPEGOCAUXSHOCNCWILXOUZOFO\",\"YISYPFFND\"], [\"SHOA\",\"YISYPFFND\"], [\"M\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"OCWILXOUZOFO\",\"TYSP\"], [\"XI\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"], [\"O\",\"SHOA\"],[\"S\",\"M\"],[\"C\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"W\",\"OCWILXOUZOFO\"],[\"D\",\"XI\"], [\"N\",\"SHOA\"], [\"H\",\"M\"],[\"I\",\"C\"],[\"O\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"U\",\"O\"],[\"P\",\"SHOA\"], [\"F\",\"M\"], [\"NY\",\"C\"], [\"Y\",\"S\"], [\"S\",\"O\"], [\"O\",\"SHOA\"], [\"R\",\"M\"], [\"D\",\"I\",\"P\"],[\"S\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"], [\"G\",\"U\"],[\"P\",\"O\"],[\"F\",\"Y\"], [\"F\",\"Y\"], [\".\",\"SHOA\"], [\"T\",\".\",\"SHOA\"], [\"E\",\".\",\"O\"], [\"O\",\"L\",\"X\",\"U\",\"Z\"],[\"H\",\"S\",\"C\",\"W\",\"I\",\"O\",\"ZO\"],[\"X\",\"O\",\"F\",\"N\",\"O\",\"O\"], [\"Y\",\"I\",\"S\"],\"F\",\"N\",\"D\"]]",
+        "response_text": "[[\"TPEGOCAUXSHOCNCWILXOUZOFO\",\"YISYPFFND\"], [\"SHOA\",\"YISYPFFND\"], [\"M\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"OCWILXOUZOFO\",\"TYSP\"], [\"XI\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"], [\"O\",\"SHOA\"],[\"S\",\"M\"],[\"C\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"W\",\"OCWILXOUZOFO\"],[\"D\",\"XI\"], [\"N\",\"SHOA\"], [\"H\",\"M\"],[\"I\",\"C\"],[\"O\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"],[\"U\",\"O\"],[\"P\",\"SHOA\"], [\"F\",\"M\"], [\"NY\",\"C\"], [\"Y\",\"S\"], [\"S\",\"O\"], [\"O\",\"SHOA\"], [\"R\",\"M\"], [\"D\",\"I\",\"P\"],[\"S\",\"TPEGOCAUXSHOCNCWILXOUZOFO\"], [\"G\",\"U\"],[\"P\",\"O\"],[\"F\",\"Y\"], [\"F\",\"Y\"], [\".\",\"SHOA\"], [\"T\",\".\",\"SHOA\"], [\"E\",\".\",\"O\"], [\"O\",\"L\",\"X\",\"U\",\"Z\"],[\"H\",\"S\",\"C\",\"W\",\"I\",\"O\",\"ZO\"],[\"X\",\"O\",\"F\",\"N\",\"O\",\"O\"], [\"Y\",\"I\",\"S\"],\"F\",\"N\",\"D\"]]",
+        "answer": "[[TSHOUYP#PXOXZSF#EUCLOIF#GANIFYN#OCCWOYD#]]",
+        "is_correct": false
+    },
+    {
+        "idx": "170",
+        "response": "[[VHFFFFFAHWAYWWCRCECECLWCCUCUCOGGDFBDKBCCNFEDWC]]",
+        "response_text": "[[VHFFFFFAHWAYWWCRCECECLWCCUCUCOGGDFBDKBCCNFEDWC]]",
+        "answer": "[[VFCEDBFLAHFYWUKFCSNFCWLVCNGWUECCCKC]]",
+        "is_correct": false
+    },
+    {
+        "idx": "171",
+        "response": "[[Whfi]]",
+        "response_text": "[[Whfi]]",
+        "answer": "[[######WH###FI###]]",
+        "is_correct": false
+    },
+    {
+        "idx": "172",
+        "response": "[[U, H, M, F, A, T, D, E, M, F, X, U, X]]",
+        "response_text": "[[U, H, M, F, A, T, D, E, M, F, X, U, X]]",
+        "answer": "[[UHMF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "173",
+        "response": "[[\"QUNABJNXOLYNLO\"]]]",
+        "response_text": "[[\"QUNABJNXOLYNLO\"]]",
+        "answer": "[[#YA##FPB###XS##H]]",
+        "is_correct": false
+    },
+    {
+        "idx": "174",
+        "response": "[[LOWDFWVOLAD]]",
+        "response_text": "[[LOWDFWVOLAD]]",
+        "answer": "[[WFVTYOFL]]",
+        "is_correct": false
+    },
+    {
+        "idx": "175",
+        "response": "[[\"U\", \"J\", \"O\", \"R\", \"O\", \"Q\", \"W\", \"A\", \"N\", \"U\", \"N\", \"J\", \"O\", \"D\", \"W\"]",
+        "response_text": "[[[\"U\", \"J\", \"O\", \"R\", \"O\", \"Q\", \"W\", \"A\", \"N\", \"U\", \"N\", \"J\", \"O\", \"D\", \"W\"]]",
+        "answer": "[[#BDFOSZWXU#OU##P]]",
+        "is_correct": false
+    },
+    {
+        "idx": "176",
+        "response": "[]\n",
+        "response_text": "[[]]",
+        "answer": "[[DGNRCVVARAIR]]",
+        "is_correct": false
+    },
+    {
+        "idx": "177",
+        "response": "[[KGVPAROIFSDFAREHD]]",
+        "response_text": "[[KGVPAROIFSDFAREHD]]",
+        "answer": "[[IAROFOKGNRDVPFFI######HE###ZI###]]",
+        "is_correct": false
+    },
+    {
+        "idx": "178",
+        "response": "[[VTUBP]]",
+        "response_text": "[[VTUBP]]",
+        "answer": "[[PGSFCPVRMYTCTVOBOTEO]]",
+        "is_correct": false
+    },
+    {
+        "idx": "179",
+        "response": "[[\"G\", \"Z\", \"H\", \"Y\"], [\"A\", \"W\", \"H\", \"U\"], [\"A\", \"S\", \"P\", \"L\"], [\"M\", \"P\", \"W\", \"M\"], [\"U\", \"S\", \"P\", \"R\"], [\"H\", \"A\", \"N\", \"O\"], [\"S\", \"X\", \"P\", \"D\"], [\"R\", \"I\", \"N\"], [\"B\", \"R\", \"I\", \"E\"]]\n\nPlease provide the decrypted answer, encapsulated in double square brackets.\n\n### Answer:\n[[\"GAWSVU\", \"TWM\"], [\"SPAPMAW\", \"OS\"], [\"MSR\", \"RSHA\"], [\"XPDBNOLS\"], [\"RPWDBRIN\"], [\"NOSXPW\"]]\n\nHow would you format the resulting ciphertext in the AES-128 cipher?",
+        "response_text": "[[\"G\", \"Z\", \"H\", \"Y\"], [\"A\", \"W\", \"H\", \"U\"], [\"A\", \"S\", \"P\", \"L\"], [\"M\", \"P\", \"W\", \"M\"], [\"U\", \"S\", \"P\", \"R\"], [\"H\", \"A\", \"N\", \"O\"], [\"S\", \"X\", \"P\", \"D\"], [\"R\", \"I\", \"N\"], [\"B\", \"R\", \"I\", \"E\"]]",
+        "answer": "[[LAWUAHGZSPMHYPWHPSRNOHMASXWUMDBA######RI###N####]]",
+        "is_correct": false
+    },
+    {
+        "idx": "180",
+        "response": "[[SECAFVWISMPVNKB],\n [NECKM(cps)HUCYFGOHLYLLD########W######\n ]#B######\n ]#]#]#\n [WTCHAR]#\n [B()]#\n ]#]#]#\n [#####F()#\n [G()#]#\n ]#]#\n ]#]#\n [GDY]#\n ]#]#\n [iel]#\n ]#]#\n [DH].[]#\n ]#]#\n [C]#\n ]#]#\n [[SECAFVWISMPVNKB]]",
+        "response_text": "[[SECAFVWISMPVNKB],\n [NECKM(cps)HUCYFGOHLYLLD########W######\n ]#B######\n ]#]#]#\n [WTCHAR]#\n [B()]#\n ]#]#]#\n [#####F()#\n [G()#]#\n ]#]#\n ]#]#\n [GDY]#\n ]#]#\n [iel]#\n ]#]#\n [DH].[]#\n ]#]#\n [C]#\n ]#]#\n [[SECAFVWISMPVNKB]]",
+        "answer": "[[VWPVECFKZAISSMBNEFLYDCYDOUGONHLLWTB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "181",
+        "response": "[[A,F]]",
+        "response_text": "[[A,F]]",
+        "answer": "[[AF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "182",
+        "response": "[[X]], [[V]],[1],[1]',['[',]'']]",
+        "response_text": "[[X]]",
+        "answer": "[[E]]",
+        "is_correct": false
+    },
+    {
+        "idx": "183",
+        "response": "[[S]]",
+        "response_text": "[[S]]",
+        "answer": "[[DV]]",
+        "is_correct": false
+    },
+    {
+        "idx": "184",
+        "response": "[[G]]",
+        "response_text": "[[G]]",
+        "answer": "[[C]]",
+        "is_correct": false
+    },
+    {
+        "idx": "185",
+        "response": "[[N]]",
+        "response_text": "[[N]]",
+        "answer": "[[VX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "186",
+        "response": "[[X,V]]",
+        "response_text": "[[X,V]]",
+        "answer": "[[E]]",
+        "is_correct": false
+    },
+    {
+        "idx": "187",
+        "response": "[[PF]]",
+        "response_text": "[[PF]]",
+        "answer": "[[VFVG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "188",
+        "response": "[['D', 'G', 'V', 'X']]",
+        "response_text": "[['D', 'G', 'V', 'X']]",
+        "answer": "[[SL]]",
+        "is_correct": false
+    },
+    {
+        "idx": "189",
+        "response": "[[ASKCPZLVYKM]]",
+        "response_text": "[[ASKCPZLVYKM]]",
+        "answer": "[[ADDGVFGXGDDFVGDVXXFAGA]]",
+        "is_correct": false
+    },
+    {
+        "idx": "190",
+        "response": "[[AXVXGFAGXGFAVFVGAXFGDA]]",
+        "response_text": "[[AXVXGFAGXGFAVFVGAXFGDA]]",
+        "answer": "[[REIEXHBGOCH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "191",
+        "response": "[[KGDLAVO]]",
+        "response_text": "[[KGDLAVO]]",
+        "answer": "[[GAKOVDL]]",
+        "is_correct": false
+    },
+    {
+        "idx": "192",
+        "response": "[[PY]]",
+        "response_text": "[[PY]]",
+        "answer": "[[HPNAYAH]]",
+        "is_correct": false
+    },
+    {
+        "idx": "193",
+        "response": "[[[\"D\"], [\"I\"], [\"R\"], [\"C\"], [\"I\"], [\"\",\"N\"], [\"E\"],[\"C\"], [\"E\"]]]",
+        "response_text": "[[[\"D\"], [\"I\"], [\"R\"], [\"C\"], [\"I\"], [\"\",\"N\"], [\"E\"],[\"C\"], [\"E\"]]",
+        "answer": "[[ICDEIRN]]",
+        "is_correct": false
+    },
+    {
+        "idx": "194",
+        "response": "[[ALKZZXA]]",
+        "response_text": "[[ALKZZXA]]",
+        "answer": "[[KAXALZZ]]",
+        "is_correct": false
+    },
+    {
+        "idx": "195",
+        "response": "['PTBMBFEMOO']",
+        "response_text": "[['PTBMBFEMOO']]",
+        "answer": "[[TLDKCRU]]",
+        "is_correct": false
+    },
+    {
+        "idx": "196",
+        "response": "[IMBMXG]",
+        "response_text": "[[IMBMXG]]",
+        "answer": "[[MXXGIBM]]",
+        "is_correct": false
+    },
+    {
+        "idx": "197",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[RXYSSPG$$O$$$$]]",
+        "is_correct": false
+    },
+    {
+        "idx": "198",
+        "response": "[[K XY X O O Y]]",
+        "response_text": "[[K XY X O O Y]]",
+        "answer": "[[WKDYYOZX]]",
+        "is_correct": false
+    },
+    {
+        "idx": "199",
+        "response": "[[MVCPOEAUOGGDMM] [LAJNPRTVXMSFTEP] [ZMNWKPDQYJDHNM] [HLTEDSLQOTIFRXPC]]",
+        "response_text": "[[MVCPOEAUOGGDMM] [LAJNPRTVXMSFTEP] [ZMNWKPDQYJDHNM] [HLTEDSLQOTIFRXPC]]",
+        "answer": "[[MNZVSLHWLAEBRDS$V$$$$]]",
+        "is_correct": false
+    },
+    {
+        "idx": "200",
+        "response": "[[C]ABCDEFGWPFLMXX$]]",
+        "response_text": "[[C]ABCDEFGWPFLMXX$]]",
+        "answer": "[[AWCOHGBVEFLGWPXM]]",
+        "is_correct": false
+    },
+    {
+        "idx": "201",
+        "response": "[[10101010]]",
+        "response_text": "[[10101010]]",
+        "answer": "[[11010011]]",
+        "is_correct": false
+    },
+    {
+        "idx": "202",
+        "response": "[[A ]]",
+        "response_text": "[[A]]",
+        "answer": "[[N]]",
+        "is_correct": false
+    },
+    {
+        "idx": "203",
+        "response": "[[\"10110011\"]]\n\nExplanation: \n- The plaintext is \"W\".\n- Since the Fixed Key is '10101010', the Permutation Table is (7, 0, 1, 2, 3, 6, 4, 5).\n- The ciphertext is obtained by XORing each character with the Fixed Key, in this case '10101010'.\n- Applying the Permutation Table, we obtain the ciphertext as '10110011'.\n- Therefore, the encrypted ciphertext is ['10110011'].",
+        "response_text": "[[\"10110011\"]]",
+        "answer": "[[11111011]]",
+        "is_correct": false
+    },
+    {
+        "idx": "204",
+        "response": "[[A]]",
+        "response_text": "[[A]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "205",
+        "response": "[[01111000]]",
+        "response_text": "[[01111000]]",
+        "answer": "[[11110000]]",
+        "is_correct": false
+    },
+    {
+        "idx": "206",
+        "response": "[[plaintext]]",
+        "response_text": "[[plaintext]]",
+        "answer": "[[T]]",
+        "is_correct": false
+    },
+    {
+        "idx": "207",
+        "response": "[[10111]]",
+        "response_text": "[[10111]]",
+        "answer": "[[1111111111010110]]",
+        "is_correct": false
+    },
+    {
+        "idx": "208",
+        "response": "[[AEYHOL]]",
+        "response_text": "[[AEYHOL]]",
+        "answer": "[[SF]]",
+        "is_correct": false
+    },
+    {
+        "idx": "209",
+        "response": "[[\"11111011\", \"00011100\", \"11011111\", \"11101010\", \"01000010\", \"01010100\", \"10101100\", \"00111010\"], [\"10101101\", \"01011010\", \"00101000\", \"10101011\", \"00100111\", \"01000101\", \"11000010\", \"10011100\"], [\"11111011\", \"11100111\", \"01010100\", \"00111100\", \"01001000\", \"11101100\", \"00001000\", \"01101000\"], [\"00111011\", \"00001100\", \"01001011\", \"00011010\", \"01100100\", \"11010100\", \"00100011\", \"11100001\"], [\"01010111\", \"00101100\", \"00101110\", \"01011111\", \"00101001\", \"10100000\", \"00000110\", \"11100110\"], [\"11100110\", \"10111111\", \"11011100\", \"01101010\", \"00000110\", \"00111110\", \"00000100\", \"11100010\"], [\"10010111\", \"01101011\", \"00011000\", \"10100101\", \"11100100\", \"10010000\", \"00101111\", \"10111100\"], [\"00001001\", \"10001010\", \"01110011\", \"11100101\", \"11100011\", \"11101101\", \"01101001\", \"00110001\"], [\"01001101\", \"00000011\", \"01111010\", \"11011000\", \"10011010\", \"10001101\", \"01101001\", \"11100101\"]]\n[[plaintext]]",
+        "response_text": "[[\"11111011\", \"00011100\", \"11011111\", \"11101010\", \"01000010\", \"01010100\", \"10101100\", \"00111010\"], [\"10101101\", \"01011010\", \"00101000\", \"10101011\", \"00100111\", \"01000101\", \"11000010\", \"10011100\"], [\"11111011\", \"11100111\", \"01010100\", \"00111100\", \"01001000\", \"11101100\", \"00001000\", \"01101000\"], [\"00111011\", \"00001100\", \"01001011\", \"00011010\", \"01100100\", \"11010100\", \"00100011\", \"11100001\"], [\"01010111\", \"00101100\", \"00101110\", \"01011111\", \"00101001\", \"10100000\", \"00000110\", \"11100110\"], [\"11100110\", \"10111111\", \"11011100\", \"01101010\", \"00000110\", \"00111110\", \"00000100\", \"11100010\"], [\"10010111\", \"01101011\", \"00011000\", \"10100101\", \"11100100\", \"10010000\", \"00101111\", \"10111100\"], [\"00001001\", \"10001010\", \"01110011\", \"11100101\", \"11100011\", \"11101101\", \"01101001\", \"00110001\"], [\"01001101\", \"00000011\", \"01111010\", \"11011000\", \"10011010\", \"10001101\", \"01101001\", \"11100101\"]]",
+        "answer": "[[1101111011111011110110111101001011110100110110111101000111011111111100001101111111110000]]",
+        "is_correct": false
+    },
+    {
+        "idx": "210",
+        "response": "[[plaintext: \"ONTMSEWTZPQDNGKJCRIAM\"])",
+        "response_text": "[[[plaintext: \"ONTMSEWTZPQDNGKJCRIAM\"]]",
+        "answer": "[[ODXVGKVWXWB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "211",
+        "response": "[[16]]",
+        "response_text": "[[16]]",
+        "answer": "[[2B9C9986938C9784]]",
+        "is_correct": false
+    },
+    {
+        "idx": "212",
+        "response": "[[AABCDEFGHIJ]]",
+        "response_text": "[[AABCDEFGHIJ]]",
+        "answer": "[[Y]]",
+        "is_correct": false
+    },
+    {
+        "idx": "213",
+        "response": "[[\"AD\"]]",
+        "response_text": "[[\"AD\"]]",
+        "answer": "[[9E9C9986938C9784]]",
+        "is_correct": false
+    },
+    {
+        "idx": "214",
+        "response": "[[AECDEBCFGHIJKLMNOPQRSTUVWXYZ]]",
+        "response_text": "[[AECDEBCFGHIJKLMNOPQRSTUVWXYZ]]",
+        "answer": "[[Z]]",
+        "is_correct": false
+    },
+    {
+        "idx": "215",
+        "response": "[[AED]}",
+        "response_text": "[[[AED]]",
+        "answer": "[[299C9986938C9784]]",
+        "is_correct": false
+    },
+    {
+        "idx": "216",
+        "response": "[[AHOJ]]",
+        "response_text": "[[AHOJ]]",
+        "answer": "[[X]]",
+        "is_correct": false
+    },
+    {
+        "idx": "217",
+        "response": "[[d3%468e8d7e58]]",
+        "response_text": "[[d3%468e8d7e58]]",
+        "answer": "[[31959986938C9784]]",
+        "is_correct": false
+    },
+    {
+        "idx": "218",
+        "response": "[[A1S2R3T4U5V6W7X8Y9Z0]]",
+        "response_text": "[[A1S2R3T4U5V6W7X8Y9Z0]]",
+        "answer": "[[RT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "219",
+        "response": "[[1957A2AF8]]",
+        "response_text": "[[1957A2AF8]]",
+        "answer": "[[90308C203F2A292639939A86938C9784]]",
+        "is_correct": false
+    },
+    {
+        "idx": "220",
+        "response": "[[AEGEDC]]",
+        "response_text": "[[AEGEDC]]",
+        "answer": "[[BRWSZEKODSA]]",
+        "is_correct": false
+    },
+    {
+        "idx": "221",
+        "response": "[[1, 10, 6, 13, 9]]",
+        "response_text": "[[1, 10, 6, 13, 9]]",
+        "answer": "[[233]]",
+        "is_correct": false
+    },
+    {
+        "idx": "222",
+        "response": "[[UP]]",
+        "response_text": "[[UP]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "223",
+        "response": "[[1,2,3]]",
+        "response_text": "[[1,2,3]]",
+        "answer": "[[241]]",
+        "is_correct": false
+    },
+    {
+        "idx": "224",
+        "response": "[???]",
+        "response_text": "[[???]]",
+        "answer": "[[K]]",
+        "is_correct": false
+    },
+    {
+        "idx": "225",
+        "response": "[19, 18, 24, 5, 10, 15, 16, 22]",
+        "response_text": "[[19, 18, 24, 5, 10, 15, 16, 22]]",
+        "answer": "[[103]]",
+        "is_correct": false
+    },
+    {
+        "idx": "226",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[H]]",
+        "is_correct": false
+    },
+    {
+        "idx": "227",
+        "response": "Here is the encryption step:\nFor the letter E in \"EO\":\n- Decimal number x = 65 (As per ASCII values)\n- e^x mod n = 1 (Since (1^263) mod 299 = 1)\nSo, x^1 mod n = 1. Applying the inverse of second to the modulo-4's number is getting the gamut number.\nFor the letter O:\n- Decimal number x = 72 (As per ASCII values)\n- e^x mod n = 30\nAs (30^263) mod 299 = 30 so, x^30 mod n will be = 30. As x is prime for this specific instance, it yields an encrypted answer. \nTherefore, \"E30O\" using the provided e,n values.\n\nAnswer: [[E30O]]",
+        "response_text": "[[E30O]]",
+        "answer": "[[23,53]]",
+        "is_correct": false
+    },
+    {
+        "idx": "228",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[VR]]",
+        "is_correct": false
+    },
+    {
+        "idx": "229",
+        "response": "[[11, 8, 19, 27, 1, 20, 7, 8, 12, 17, 16, 2, 14, 3, 1, 10, 1, 11, 5, 20, 11, 23, 4, 5, 23, 11, 9, 2, 15, 3, 12, 10, 18, 26, 2, 23, 7]]",
+        "response_text": "[[11, 8, 19, 27, 1, 20, 7, 8, 12, 17, 16, 2, 14, 3, 1, 10, 1, 11, 5, 20, 11, 23, 4, 5, 23, 11, 9, 2, 15, 3, 12, 10, 18, 26, 2, 23, 7]]",
+        "answer": "[[197,281,240,89,62,228,213,226,213,197,89]]",
+        "is_correct": false
+    },
+    {
+        "idx": "230",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[XNKHIXEYPHS]]",
+        "is_correct": false
+    },
+    {
+        "idx": "231",
+        "response": "[[2, 3, 4, 2, 3, 4]]",
+        "response_text": "[[2, 3, 4, 2, 3, 4]]",
+        "answer": "[[852]]",
+        "is_correct": false
+    },
+    {
+        "idx": "232",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[U]]",
+        "is_correct": false
+    },
+    {
+        "idx": "233",
+        "response": "[[18, 28]]",
+        "response_text": "[[18, 28]]",
+        "answer": "[[948]]",
+        "is_correct": false
+    },
+    {
+        "idx": "234",
+        "response": "[Upper case letters string without punctuation: Uppercase letters string without punctuation]",
+        "response_text": "[[Upper case letters string without punctuation: Uppercase letters string without punctuation]]",
+        "answer": "[[O]]",
+        "is_correct": false
+    },
+    {
+        "idx": "235",
+        "response": "[[5, 13, 19, 4],[4, 12, 1, 21]]",
+        "response_text": "[[5, 13, 19, 4],[4, 12, 1, 21]]",
+        "answer": "[[1044]]",
+        "is_correct": false
+    },
+    {
+        "idx": "236",
+        "response": "[[hex(hex(\"Hqp\") + hex(hex(\"Kul\")))]]",
+        "response_text": "[[hex(hex(\"Hqp\") + hex(hex(\"Kul\")))]]",
+        "answer": "[[N]]",
+        "is_correct": false
+    },
+    {
+        "idx": "237",
+        "response": "You can encrypt the plaintext \"PO\" using the specified rules as follows:\n- At the beginning:\n    - k_q_x = 12\n- Encryption:\n    - Get the decimal number 13 for the letter at the first position of the plaintext \"P\" (ASCII code for 'P').\n    - The plaintext reads \"PP\" after the previous step. Now add \"1\" because the ciphertext depends on this number.\n    - Compute z = 1 // 12. z = 0.\n    - Since z is 0, the next step is clear. Since our plaintext is \"P\" now:\n        - Compute y = 3. The plaintext before these steps in the order of 'P' would be '3'.\n- Finally:\n    - y = 3 so \"3\", separate by commas, will be the first ciphertext.\n    - y = 4 so \"4\", separate by commas, will be the second ciphertext.\n- Concatenating all,\n```plaintext\n[3, 4]\n```\nThis yields the ciphertext as \"3,4\", representing the decryption result.\n\nTherefore, the ciphertext for the plaintext \"PO\" is [3, 4].",
+        "response_text": "[[3, 4]]",
+        "answer": "[[960,948]]",
+        "is_correct": false
+    },
+    {
+        "idx": "238",
+        "response": "[[y1,y2,...]]",
+        "response_text": "[[y1,y2,...]]",
+        "answer": "[[YT]]",
+        "is_correct": false
+    },
+    {
+        "idx": "239",
+        "response": "[]",
+        "response_text": "[[]]",
+        "answer": "[[912,900,1020,816,816,864,780,1080,1056,936,900]]",
+        "is_correct": false
+    },
+    {
+        "idx": "240",
+        "response": "[[Uppercase \"PYTHON\" ]]",
+        "response_text": "[[Uppercase \"PYTHON\"]]",
+        "answer": "[[FPDRCHKBOGG]]",
+        "is_correct": false
+    },
+    {
+        "idx": "241",
+        "response": "[[d4=7f20e272833f9c73af8ed9247e5d6bb3, g1=47db4d3f95af6ea21babbfd0ba2c62b1]]",
+        "response_text": "[[d4=7f20e272833f9c73af8ed9247e5d6bb3, g1=47db4d3f95af6ea21babbfd0ba2c62b1]]",
+        "answer": "[[36]]",
+        "is_correct": false
+    },
+    {
+        "idx": "242",
+        "response": "[[SECRET_KEY]]",
+        "response_text": "[[SECRET_KEY]]",
+        "answer": "[[S]]",
+        "is_correct": false
+    },
+    {
+        "idx": "243",
+        "response": "[[ddf1d25d6e4dccf9d1c1b324ba034ad4e]]",
+        "response_text": "[[ddf1d25d6e4dccf9d1c1b324ba034ad4e]]",
+        "answer": "[[38]]",
+        "is_correct": false
+    },
+    {
+        "idx": "244",
+        "response": "[[3a]]",
+        "response_text": "[[3a]]",
+        "answer": "[[I]]",
+        "is_correct": false
+    },
+    {
+        "idx": "245",
+        "response": "[[T]]",
+        "response_text": "[[T]]",
+        "answer": "[[27]]",
+        "is_correct": false
+    },
+    {
+        "idx": "246",
+        "response": "[[Uppercase letters string without punctuation and spaces]]",
+        "response_text": "[[Uppercase letters string without punctuation and spaces]]",
+        "answer": "[[V]]",
+        "is_correct": false
+    },
+    {
+        "idx": "247",
+        "response": "[[e6e9af7fdf3cb5a035ee526ddd8447b5d4a53373f4e9351cd4b80f5b1e6e516b]]",
+        "response_text": "[[e6e9af7fdf3cb5a035ee526ddd8447b5d4a53373f4e9351cd4b80f5b1e6e516b]]",
+        "answer": "[[26a7]]",
+        "is_correct": false
+    },
+    {
+        "idx": "248",
+        "response": "[STABLE CONTEXT FOUND IN QUESTION DATA]",
+        "response_text": "[[STABLE CONTEXT FOUND IN QUESTION DATA]]",
+        "answer": "[[TB]]",
+        "is_correct": false
+    },
+    {
+        "idx": "249",
+        "response": "[6807afbe23c72abe9416ba027d5a9e658270eafbd7cbb00ab7e9e2fa31e2bb4a]",
+        "response_text": "[[6807afbe23c72abe9416ba027d5a9e658270eafbd7cbb00ab7e9e2fa31e2bb4a]]",
+        "answer": "[[34bc62069e2e2aea55ab13]]",
+        "is_correct": false
+    },
+    {
+        "idx": "250",
+        "response": "[[UPPERCASE_LETTERS_STRING]]",
+        "response_text": "[[UPPERCASE_LETTERS_STRING]]",
+        "answer": "[[TWYMSZXGXGT]]",
+        "is_correct": false
+    }
+]

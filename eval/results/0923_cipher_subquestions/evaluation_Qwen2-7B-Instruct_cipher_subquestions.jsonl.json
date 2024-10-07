@@ -1,0 +1,2762 @@
+[
+    {
+        "idx": "1",
+        "response": "[[\"O\"]]",
+        "response_text": "[[\"O\"]]",
+        "answer": "[[L]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "1",
+        "response": "[[\"\"]]\n\nExplanation: The input letter \"O\" is mapped to \"L\" through step (1). Then, following step (2), \"L\" is shifted forward 4 places in the standard_alphabet order. Counting forward from \"L\", we get \"M\", \"N\", \"O\", and \"P\". Shifting \"L\" four places forward in the standard_alphabet order lands directly on \"P\". Since there is no need to shift again as per instructions, the output after performing step (2) is [\"P\"]. Yet, the output format requests a JSON-like structure, making the correct output: [[\\\"P\\\"]].",
+        "response_text": "[[\"\"]]",
+        "answer": "[[P]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "1",
+        "response": "To decrypt \"P\" from the ciphertext:\n\n1. Let's go through the steps specified in the decryption rules:\n\n2. (1) First, find 'P' in the substitution_alphabet, which is the fourth letter.\n\n3. (2) Move 'P' backwards by 4 positions in the standard_alphabet order: M.\n\n4. (3) Replace the position of 'M' in the reversed_alphabet, which corresponds to 'B', resulting in the final decrypted character.\n\nTherefore, [[B]] is the answer after performing (3) in the decryption process.",
+        "response_text": "[[B]]",
+        "answer": "[[N]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "2",
+        "response": "[[16]]",
+        "response_text": "[[16]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "2",
+        "response": "[[U]]",
+        "response_text": "[[U]]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "2",
+        "response": "[[25]]",
+        "response_text": "[[25]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "3",
+        "response": "[[Y]]",
+        "response_text": "[[Y]]",
+        "answer": "[[Y]]",
+        "is_correct": true,
+        "type": "Substitution"
+    },
+    {
+        "idx": "3",
+        "response": "[[\"B\"]]",
+        "response_text": "[[\"B\"]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "3",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[D]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "4",
+        "response": "[['A']]",
+        "response_text": "[['A']]",
+        "answer": "[[G]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "4",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "4",
+        "response": "To decrypt the ciphertext \"A\", we follow the specified decryption rules:\n\nPlaintext: \"A\"\n\n1. Reverse (Substitution to Standard Alphabets): Find \"A\" in the substitution_alphabet \"RFDJUHABCEGIKLMNOPQSTVWXYZ\". Position of \"A\" is 1 (considering the first position as 1). So, \"A\" maps to the first letter of the standard_alphabet \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\", which is \"A\".\n    => Output after Step 1: \"A\"\n\n2. Reverse (Standard to Reversed Alphabets): Find \"A\" in the standard_alphabet \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\". Position of \"A\" is 1. So, \"A\" maps to the first letter of the reversed_alphabet \"ZYXWVUTSRQPONMLKJIHGFEDCBA\", which is \"Z\".\n    => Output after Step 2: \"Z\"\n\n3. Reverse (Reversed to Standard Alphabets): Since the result of Step 2 is already \"Z\", find its position in the reversed_alphabet which is 26. \"Z\" in the reversed_alphabet maps back to \"A\" in the standard_alphabet.\n    => Output after Step 3: \"A\"\n\nThus, the final plaintext after decryption is \"A\". The output after performing Step (3) as requested is:\n\n[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "5",
+        "response": "[[V]]",
+        "response_text": "[[V]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "5",
+        "response": "[[N]]",
+        "response_text": "[[N]]",
+        "answer": "[[L]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "5",
+        "response": "[['[[J]]']]",
+        "response_text": "[['[[J]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "6",
+        "response": "[['S', 'Y']]",
+        "response_text": "[['S', 'Y']]",
+        "answer": "[[T]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "6",
+        "response": "To decrypt the given ciphertext letter \"S\" following the described process:\n\n1. (1) For each letter c in Ciphertext, find its position in the substitution_alphabet and replace it with the corresponding letter in the standard_alphabet:\n   - The position of \"S\" in the substitution_alphabet \"RFDJUHABCEGIKLMNOPQSTVWXYZ\" is 16.\n   - The standard_alphabet does not need adjustment as the letters are in their natural order.\n\n   So, \"S\" is first replaced with the letter at position 16 in the standard_alphabet \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\", which is \"P\".\n\n2. (2) Shift the letter obtained from (1) backward by 4 positions according to the standard_alphabet order:\n   - Starting with \"P\", moving 4 positions backward gives \"M\".\n\n3. Finally, replace the letter obtained from (2) by finding its position in the reversed_alphabet \"ZYXWVUTSRQPONMLKJIHGFEDCBA\", which is \"E\".\n\nSince we were only asked to perform (2) and output the result in the format [[...]], the answer is simply the letter obtained after (2), which is:\n\n[[\"M\"]]",
+        "response_text": "[[...]]",
+        "answer": "[[P]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "6",
+        "response": "```json\n[\"P\"]\n```",
+        "response_text": "[[\"P\"]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "7",
+        "response": "[[\"H\", \"Z\"]]",
+        "response_text": "[[\"H\", \"Z\"]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "7",
+        "response": "[[Z]]",
+        "response_text": "[[Z]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "7",
+        "response": "To solve this question, follow the encryption steps as described:\n\n1. Reverse mapping (reversed_alphabet to standard_alphabet) for H:\n   - H maps to N in the standard_alphabet.\n\n2. Shift letters forward by 4 places in the standard_alphabet for N:\n   - N shifted 4 places forward is Q.\n\n3. Replace the letter Q in standard_alphabet by using the corresponding letter in substitution_alphabet:\n   - Q maps to X in the substitution_alphabet.\n\nTherefore, the answer in the requested format is [[X]].",
+        "response_text": "[[X]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "7",
+        "response": "[[[22] [25]]]",
+        "response_text": "[[[22] [25]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "7",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "7",
+        "response": "[[I]]",
+        "response_text": "[[I]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "8",
+        "response": "[[\"Z\"]]",
+        "response_text": "[[\"Z\"]]",
+        "answer": "[[Z]]",
+        "is_correct": true,
+        "type": "Substitution"
+    },
+    {
+        "idx": "8",
+        "response": "[[B]]",
+        "response_text": "[[B]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "8",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "8",
+        "response": "[[N]]",
+        "response_text": "[[N]]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "8",
+        "response": "[[\"A\"]]",
+        "response_text": "[[\"A\"]]",
+        "answer": "[[N]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "8",
+        "response": "[['R']]",
+        "response_text": "[['R']]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"U\"]]",
+        "response_text": "[[\"U\"]]",
+        "answer": "[[G]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[G]]",
+        "response_text": "[[G]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[G]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[ZN]]",
+        "response_text": "[[ZN]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[Z]]",
+        "response_text": "[[Z]]",
+        "answer": "[[Q]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"D\", \"J\"]]",
+        "response_text": "[[\"D\", \"J\"]]",
+        "answer": "[[O]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[Y]]",
+        "response_text": "[[Y]]",
+        "answer": "[[P]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"SKJSFJHWZX\"]]",
+        "response_text": "[[\"SKJSFJHWZX\"]]",
+        "answer": "[[T]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "To decrypt the given plaintext \"TNKGPHLSYPV,\" let's take the letter \"K\" as an example and follow the decryption rules step by step.\n\n### Encryption Steps for 'K':\n\n1. Use `reversed_alphabet` for reverse mapping.\n   - Find the position of 'K' in `standard_alphabet`: 11th position ('K').\n   - Replace with the letter in the corresponding position in `reversed_alphabet`: Ts.\n\n2. Move the letter obtained in (1) forward 4 places in `standard_alphabet` order.\n   - Ts -> To (Moving 's' 4 places forward in `standard_alphabet`).\n\n3. Replace the letter obtained from (2) by finding its position in `standard_alphabet` and using the corresponding letter in `substitution_alphabet`.\n   - Find the position of 'o' in `standard_alphabet`: 15th position ('o').\n   - Replace with the corresponding letter in `substitution_alphabet`: NT.\n\n### Answer:\nFor the letter \"K\" in the decryption process:\n- After following (1)(2), the letter obtained is \"To\".\n- Replacing \"To\" in (3), the final ciphertext letter is \"NT\".\n\nSo, the format is `[[NT]]`.",
+        "response_text": "[[NT]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[Z]]",
+        "response_text": "[[Z]]",
+        "answer": "[[T]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[T]]",
+        "response_text": "[[T]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[XV]]",
+        "response_text": "[[XV]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[Q]]",
+        "response_text": "[[Q]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[O]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[O]]",
+        "response_text": "[[O]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"H\"]]",
+        "response_text": "[[\"H\"]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"S\", \"U\"]]",
+        "response_text": "[[\"S\", \"U\"]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[\"L\"]",
+        "response_text": "[[\"L\"]]",
+        "answer": "[[O]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[O -> U]]",
+        "response_text": "[[O -> U]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[\"S\"]",
+        "response_text": "[[\"S\"]]",
+        "answer": "[[Q]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"S\", \"Y\"]]",
+        "response_text": "[[\"S\", \"Y\"]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[L]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[25]]",
+        "response_text": "[[25]]",
+        "answer": "[[B]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[F]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[F]]",
+        "response_text": "[[F]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"P\", \"Z\"]]",
+        "response_text": "[[\"P\", \"Z\"]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[K]]",
+        "response_text": "[[K]]",
+        "answer": "[[O]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "```plaintext\n[[MD]]\n```",
+        "response_text": "[[MD]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "[[\"V\", \"Z\"]]",
+        "response_text": "[[\"V\", \"Z\"]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "9",
+        "response": "```\n[11]\n```",
+        "response_text": "[[11]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "9",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[V -> A]]",
+        "response_text": "[[V -> A]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[A]]",
+        "response_text": "[[A]]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[[\"R\"]]]",
+        "response_text": "[[[\"R\"]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[\"J\"]",
+        "response_text": "[[\"J\"]]",
+        "answer": "[[D]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[KH]]",
+        "response_text": "[[KH]]",
+        "answer": "[[Z]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[A]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[['Y', 'R']]",
+        "response_text": "[['Y', 'R']]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "To decrypt the given ciphertext, we follow the decryption steps for the letter \"Y\":\n\n1. Find the position of \"Y\" in the substitution alphabet \"RFDJUHABCEGIKLMNOPQSTVWXYZ\", which corresponds to position 5 (since \"R\" is the 1st, \"F\" is the 2nd, \"D\" is the 3rd, \"J\" is the 4th, and \"U\" is the 5th in the sequence).\n\n2. Shift the letter backward by 4 positions in the standard alphabet \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\". Since \"Y\" is the 25th letter, shifting backward by 4 positions means calculating the position by subtracting 4 from 25 and wrapping around if necessary.\n\n   \\( 25 - 4 = 21 \\)\n\n   The letter at position 21 in the alphabet is \"V\".\n\nTherefore, after executing step (2), the answer in the requested format is:\n\n[[\"V\"]]",
+        "response_text": "[[\"V\"]]",
+        "answer": "[[U]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[RA]]",
+        "response_text": "[[RA]]",
+        "answer": "[[F]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[16, \"W\"]]",
+        "response_text": "[[16, \"W\"]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"I\"]]",
+        "response_text": "[[\"I\"]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[S]]",
+        "response_text": "[[S]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"Q\"]]",
+        "response_text": "[[\"Q\"]]",
+        "answer": "[[A]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[CT]]",
+        "response_text": "[[CT]]",
+        "answer": "[[W]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[W]]",
+        "response_text": "[[W]]",
+        "answer": "[[D]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[3]]",
+        "response_text": "[[3]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[A]]",
+        "response_text": "[[A]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[B]]",
+        "response_text": "[[B]]",
+        "answer": "[[B]]",
+        "is_correct": true,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[['V', 'J', 'Y', 'W', 'R', 'D', 'A', 'O', 'P', 'H', 'Z']]",
+        "response_text": "[['V', 'J', 'Y', 'W', 'R', 'D', 'A', 'O', 'P', 'H', 'Z']]",
+        "answer": "[[G]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"DB\"]]",
+        "response_text": "[[\"DB\"]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[14]]",
+        "response_text": "[[14]]",
+        "answer": "[[Q]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"Q\"]]",
+        "response_text": "[[\"Q\"]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[M]]",
+        "response_text": "[[M]]",
+        "answer": "[[N]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[['P', 'R']]]",
+        "response_text": "[[['P', 'R']]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"R\"]]",
+        "response_text": "[[\"R\"]]",
+        "answer": "[[N]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[DJUHABCEGIKLMNOPQSTVW]]",
+        "response_text": "[[DJUHABCEGIKLMNOPQSTVW]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "To decrypt the given ciphertext \"VJYWRDAOPHZ,\" we'll follow the decryption rules step by step for each character in the message. Let's start with the first character 'V.'\n\n1. **Find the position in substitution_alphabet and replace it with the corresponding letter in standard_alphabet.**\n\n   - **Character:** V\n   \n   - **Position in substitution_alphabet:** 19 (since V is the 19th letter in the alphabet)\n   \n   - **Replace with corresponding letter in standard_alphabet:** T\n   \n   - **Output:** [[T]]\n\nThis process is repeated for each character in the ciphertext. For brevity, I'll provide the result for the character 'H' as requested:\n\n1. **For the character 'H':**\n\n   - **Position in substitution_alphabet:** 8 (since H is the 8th letter in the alphabet)\n   \n   - **Replace with corresponding letter in standard_alphabet:** B\n   \n   - **Output:** [[B]]\n\nSo, the formatted output for the decryption of 'H' is: `[[B]]`.",
+        "response_text": "[[T]]",
+        "answer": "[[F]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[B]]",
+        "response_text": "[[B]]",
+        "answer": "[[B]]",
+        "is_correct": true,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[K]]",
+        "response_text": "[[K]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"VJYWRDAOPHZ\"]]",
+        "response_text": "[[\"VJYWRDAOPHZ\"]]",
+        "answer": "[[Z]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "10",
+        "response": "[[D]]",
+        "response_text": "[[D]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "10",
+        "response": "[[\"A\"]]",
+        "response_text": "[[\"A\"]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "11",
+        "response": "To solve this, let's go through the decryption process step-by-step for the letter \"R\" given the rules and preparation found:\n\n1. **Understanding the Disk Arrangements**:\n   - **Outer Disk**: \"QWERTYUIOPASDFGHJZXVCBNMKL\"\n   - **Inner Disk**: \"JKLZXCVBNMASDFGHJQWERTYUIO\"\n\n2. **Decryption Steps for the Letter \"R\"**:\n   - **Step 1**: Find the character \"R\" in the **Outer Disk**.\n     - \"R\" is at the 18th position in the **Outer Disk**.\n   - **Step 2**: Replace \"R\" with the character at the corresponding position on the **Inner Disk**.\n     - At the 18th position in the **Inner Disk**, it corresponds to \"E\" (since \"R\" is at the 18th position, and we start counting from 1).\n\nThus, after decryption, the result is **\"E\"**.\n\n**Answer in [ ... ] format**:\n[ [\"R\", \"E\"] ]",
+        "response_text": "[[...]]",
+        "answer": "[[Z]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "12",
+        "response": "[[Y]]",
+        "response_text": "[[Y]]",
+        "answer": "[[T]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "13",
+        "response": "[[BN]]",
+        "response_text": "[[BN]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "14",
+        "response": "[[E]]",
+        "response_text": "[[E]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "15",
+        "response": "[[\"V\"]]",
+        "response_text": "[[\"V\"]]",
+        "answer": "[[T]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "16",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[A]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "17",
+        "response": "[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "17",
+        "response": "[[JKLZXCVBNMASDFGHJQWERTYUIOP]]",
+        "response_text": "[[JKLZXCVBNMASDFGHJQWERTYUIOP]]",
+        "answer": "[[CVBNMASDFGHJQWERTYUIOJKLZX]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "17",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "18",
+        "response": "[[R]]",
+        "response_text": "[[R]]",
+        "answer": "[[U]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "18",
+        "response": "[[R]]",
+        "response_text": "[[R]]",
+        "answer": "[[A]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[B]]",
+        "response_text": "[[B]]",
+        "answer": "[[L]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[DJ]]",
+        "response_text": "[[DJ]]",
+        "answer": "[[F]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[BNMASDFGHJKLQWERTYZXCV]]",
+        "response_text": "[[BNMASDFGHJKLQWERTYZXCV]]",
+        "answer": "[[XCVBNMASDFGHJQWERTYUIOJKLZ]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "19",
+        "response": "[[G]]",
+        "response_text": "[[G]]",
+        "answer": "[[O]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "To decrypt the given ciphertext with the specified encryption rules, we will follow the decryption steps outlined:\n\n1. **Identify the relevant properties and objects**: \n   - Plaintext: \"EFBCRGLXTUS\"\n   - period: 2\n   - increment: 4\n   - Initial inner_disk: \"XCVBNMASDFGHJQWERTYUIOJKLZ\"\n\n2. **Decrypt each character**:\n   - For each character c in the ciphertext, start by finding the character in the initial inner_disk.\n   - Replace the found character with its corresponding position in the outer_disk.\n   - Perform the process considering the given period and increment to rotate the inner_disk correctly after every 2 characters.\n\n3. **Apply the decryption process for C in \"EFBCRGLXTUS\"**:\n\n   a. **Character C**: \n      - Inner_disk position: 2 (K)\n      - Outer_disk position: Outer_disk['K'] = \"K\"\n      - Inner_Disk remains unchanged since it's the first cycle for this character.\n\n   After decrypting \"C\" we've found \"K\" from the outer_disk.\n\n   **Current state update**:\n   - Renew the encrypted text with decrypted \"K\".\n   - Rotate the inner_disk for the next 2 characters.\n\n4. **Continuation for the entire ciphertext**:\n   - Repeat the decryption and rotation process for all characters in the ciphertext.\n   - For every 2nd character, update the rotation of the inner_disk by 4 characters to the right.\n\n5. **Final decrypted text**:\n   - Complete the decryption process for all characters in the input ciphertext \"EFBCRGLXTUS\" with the period 2 and increment 4.\n   - Maintain the correct orientation of the inner_disk based on the decryption sequence.\n\nFollowing these steps, the decrypted text for the given ciphertext is \"ANGELDOLLZTH\".",
+        "response_text": "[['K']]",
+        "answer": "[[U]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[XYZVUTSRQPONMLKJIHGFEDCB沃]]",
+        "response_text": "[[XYZVUTSRQPONMLKJIHGFEDCB沃]]",
+        "answer": "[[NMASDFGHJQWERTYUIOJKLZXCVB]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "19",
+        "response": "To find the encrypted character for the letter \"R\" in the given plaintext \"EFBCRGLXTUS\" with period 2 and increment 4, follow the specified cipher rules:\n\n1. **Find the character in the outer_disk for \"R\"**\n   - The character \"R\" is at position 17 in the outer_disk \"QWERTYUIOPASDFGHJZXCVBNMKL\".\n\n2. **Replace it with the character at the corresponding position on the inner_disk**\n   - After processing the first 2 characters, we need to rotate the inner_disk to the right by 4 characters. The current position of \"R\" (17) is greater than 1 (initial position) plus the increment of 4, which means the rotation happens.\n\n**Calculate the new position for \"R\" after rotation:**\n- Since the initial position is 1 (after rotating the first 'Q' by 4 to the right, starting the outer_disk's positions at 0), for \"R\" (position 17), we calculate the new position after rotating the inner_disk 4 times.\n- The formula to calculate the new position after rotation is: \\(New\\ Position = Initial\\ Position + Increment\\ Rotation - Increment\\).\n- \\(New\\ Position = 1 + 4 - 4 = 1\\).\n\n**Adjusting for the full rotation since position is less than 27 (upper limit of the alphabet):**\n- In Python, the modulo operation % helps in wrapping the number back within the 0-to-25 range. Thus, \\(New\\ Position\\ (mod\\ 26) = 1\\).\n\nTherefore, the new position of character \"R\" in the inner_disk, after processing every 2 characters and rotating by 4 characters each time, remains logic-space-positioned, considering our starting position change and adjustment. However, the key point here is understanding the method and subsequent position calculation.\n\nGiven the final position calculation concept and starting position understanding, the character \"R\" in the outer_disk, after encryption, corresponds to the character in the inner_disk at its respective position, which we've determined through logic and understanding the provided key steps.\n\nThis process directly corresponds to encryption steps, as decryption would reverse the operation. Given no direct crypt calculated position output in a standard cipher format, and following the specified rule execution logic, the focused understanding of how \"R\" is processed illustrates the cipher operation at a conceptual level.\n\n---\n\n**In conclusion**, the core concept of finding the encrypted form of \"R\" based on the given encryption's period and increment involves transitioning it through distinct positions in the outer_disk to its corresponding position in the correctly adjusted and rotated inner_disk. The detailed step-by-step process highlights the mechanics of applying a cyclical shift cipher effectively, adhering to specified conditions and unusual notation conventions unique to this cipher description.",
+        "response_text": "NULL",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[[\"G\", \"C\"], 0]]",
+        "response_text": "[[[\"G\", \"C\"], 0]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[\"N\", \"M\", \"A\", \"S\", \"D\", \"F\", \"G\", \"H\", \"J\", \"Q\", \"W\", \"E\", \"R\", \"T\", \"Y\", \"U\", \"I\", \"O\", \"J\", \"K\", \"L\", \"Z\", \"X\", \"C\", \"V\", \"B\", \"I\", \"P\"]",
+        "response_text": "[[\"N\", \"M\", \"A\", \"S\", \"D\", \"F\", \"G\", \"H\", \"J\", \"Q\", \"W\", \"E\", \"R\", \"T\", \"Y\", \"U\", \"I\", \"O\", \"J\", \"K\", \"L\", \"Z\", \"X\", \"C\", \"V\", \"B\", \"I\", \"P\"]]",
+        "answer": "[[DFGHJQWERTYUIOJKLZXCVBNMAS]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "19",
+        "response": "[[M]]",
+        "response_text": "[[M]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[ZF]]",
+        "response_text": "[[ZF]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[DFGHJQWERTYUIOKLZXCVBNM]",
+        "response_text": "[[DFGHJQWERTYUIOKLZXCVBNM]]",
+        "answer": "[[JQWERTYUIOJKLZXCVBNMASDFGH]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "19",
+        "response": "To decrypt the ciphertext, we need to reverse the encryption steps using the given period (2) and increment (4). The current inner_disc is \"DFGHJQWERTYUIOJKLZXCVBNMAS\". \n\n**Step 1:** \nThe first character in the ciphertext is \"T\". First, we need to find the corresponding character on the inner_disk.\n\n**Find the character:**\nFor \"T\" in the ciphertext, we need to determine its position on the \"DFGHJQWERTYUIOJKLZXCVBNMAS\" inner_disk.\n\n**Found character:** \"T\" is currently at position 6 on the \"DFGHJQWERTYUIOJKLZXCVBNMAS\" inner_disk.\n\n**Step 2:**\nNext, we swap the character on the inner_disk with the character in the outer_disk at the same position.\n\n**Character from outer_disk:** \"T\" is at position 6 in the \"QWERTYUIOPASDFGHJZXCVBNMKL\" outer_disk.\n\n**Reuse character:** The character to replace \"T\" is \"T\" itself, as that's what the position 6 character should be in the outer_disk when decrypted.\n\n**Step 3:**\nAs per the decryption rules, we need to decrypt every 2 characters, and after decrypting every 2 characters, rotate the inner_disk to the right by 4 characters. Since we only have one character to decrypt in this step, no rotation is needed.\n\n**Final result for \"T\":**\nThus, the decrypted character for \"T\" is \"T\".\n\nSince there is only one character in the example, the output is just the decrypted character \"T\".\n\n**Answer in [...]:**\n[T]",
+        "response_text": "[[...]]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[U]]",
+        "response_text": "[[U]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "19",
+        "response": "[[\"J\", \"Q\", \"W\", \"E\", \"R\", \"T\", \"Y\", \"U\", \"I\", \"O\", \"K\", \"L\", \"Z\", \"X\", \"C\", \"V\", \"B\"], [\"A\", \"S\", \"D\", \"F\", \"G\", \"H\", \"J\", \"N\"], [\"M\", \"A\", \"S\", \"D\", \"F\", \"E\", \"C\", \"H\", \"R\", \"V\", \"U\", \"I\", \"O\", \"L\", \"K\", \"T\", \"G\"]]",
+        "response_text": "[[\"J\", \"Q\", \"W\", \"E\", \"R\", \"T\", \"Y\", \"U\", \"I\", \"O\", \"K\", \"L\", \"Z\", \"X\", \"C\", \"V\", \"B\"], [\"A\", \"S\", \"D\", \"F\", \"G\", \"H\", \"J\", \"N\"], [\"M\", \"A\", \"S\", \"D\", \"F\", \"E\", \"C\", \"H\", \"R\", \"V\", \"U\", \"I\", \"O\", \"L\", \"K\", \"T\", \"G\"]]",
+        "answer": "[[RTYUIOJKLZXCVBNMASDFGHJQWE]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "19",
+        "response": "[[RCV]]",
+        "response_text": "[[RCV]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "To decrypt the given ciphertext using the specified period and increment, we'll follow the decryption steps for the letter 'M' in the ciphertext \"SMSUHSYIZRZ\".\n\n**Given Information:**\n- Ciphertext: \"SMSUHSYIZRZ\"\n- Period: 8\n- Increment: 1\n- outer_disk: \"QWERTYUIOPASDFGHJZXCVBNMKL\"\n- inner_disk: \"JKLZXCVBNMASDFGHJQWERTYUIO\"\n\n**Decryption Steps:**\n\n**Step 1: Find the character in the inner_disk.**\nThe character corresponding to 'M' in the inner_disk is 'J'.\n\n**Step 2: Replace the character with the corresponding position in the outer_disk.**\nThe character 'J' in the outer_disk is at the same position as 'J' since it's already aligned according to the encryption and decryption rules. Therefore, the decrypted character remains 'J'.\n\n### Answer:\n[[J]]",
+        "response_text": "[[J]]",
+        "answer": "[[P]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[...]]",
+        "response_text": "[[...]]",
+        "answer": "[[M]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[C]]",
+        "response_text": "[[C]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "To decrypt the letter 'S' from the ciphertext \"SMSUHSYIZRZ\" with a period of 8 and an increment of 1, follow these steps:\n\n**Step 1: Locate the Character in the Inner Disk**\n- The ciphertext string is \"SMSUHSYIZRZ\", and we need to decrypt the letter 'S'.\n- 'S' appears at the 19th position (considering A=1, B=2, ..., Z=26) on the inner disk \"JKLZXCVBNMASDFGHJQWERTYUIO\".\n\n**Step 2: Replace the Character with Its Corresponding Position in the Outer Disk**\n- To find the corresponding character in the outer disk \"QWERTYUIOPASDFGHJZXCVBNMKL\", we need to match the position of 'S' from the inner disk relative to the outer disk.\n- However, the decryption process specifically focuses on moving the inner disk to match each encrypted character, not directly replacing them. Thus, we'll step through the decryption process assuming each encrypted letter will point to its original position in the plaintext.\n\n**Step 3: Decrypt the Ciphertext**\n- Since 'S' was found at position 19 on the inner disk, we match it with the corresponding position in the outer disk. However, for decryption, we follow the process backward relative to encryption.\n- In decryption, for every letter, you find the letter from the ciphertext on the inner disk and then determine its position (counter-clockwise in decryption) as if you are building the message again.\n\n**Specific Decryption Steps for 'S' given Ciphertext 'S', period 8, and increment 1**\n\n1. **Initial Setup**:\n   - Outer Disk: \"QWERTYUIOPASDFGHJZXCVBNMKL\"\n   - Inner Disk: \"JKLZXCVBNMASDFGHJQWERTYUIO\"\n   - Period: 8\n   - Increment: 1\n\n2. **Decrypt 'S'**:\n   - Identify 'S' in the Inner Disk. You start at 'S' and check the key for the decryption cycle (period = 8).\n\n3. **Proceed with Decryption**:\n   - For each character in the ciphertext, you would shift the inner disk right (backward for decryption) by the increment (1 in this case) for every characters processed (every period in encryption, or character in this case for decryption).\n\n**Final Decryption Action**:\n- The actual decryption requires iterating through the ciphertext starting with 'S'. Each step involves moving the inner disk relative to the outer disk by the increment (1) to find the original character before rotation.\n\n**Answer in [...]** format:\nDecryption for 'S' is a process and cannot be represented in [...]. However, if you seek the final decrypted letter after iterating through the entire ciphertext with the calculation for each letter's position change based on the period and increment; the immediate decryption of 'S' under these rules involves acknowledging the complexities of its actual placement post-iterations and not a direct letter replacement as asked or typically expected with simple substitution models outlined here. For clarity on step-by-step identification of 'S' processed through decryption cycle respecting 'period' and 'increment', a computational approach applying decryption steps systematically through 'S's context in \"SMSUHSYIZRZ\" would track back each character's original position on 'QWERTYUIOPASDFGHJZXCVBNMKL'.",
+        "response_text": "[[...]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "First, let's find the character corresponding to 'Y' in the inner_disk.\n\nInner_disk: \"JKLZXCVBNMASDFGHJQWERTYUIOP\"\nPosition of 'Y': 23\n\nUsing the position system of the inner_disk ('JKLZXCVBNMASDFGHJQWERTYUIOP'), we see that the character at position 23 is 'Y'.\n\nNow, let's replace 'Y' with the corresponding character in the outer_disk.\n\nOuter_disk: \"QWERTYUIOPASDFGHJZXCVBNMKL\"\n\nFinding the character at the same position (23) in the outer_disk gives us \"N\".\n\nThus, after replacing 'Y' with the corresponding character in the outer_disk, the answer is `[\"N\"]`.",
+        "response_text": "[[\"N\"]]",
+        "answer": "[[N]]",
+        "is_correct": true,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[Z]]",
+        "response_text": "[[Z]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[JKLZXCVBNMASDFGHJQWERTYUIO]]",
+        "response_text": "[[JKLZXCVBNMASDFGHJQWERTYUIO]]",
+        "answer": "[[KLZXCVBNMASDFGHJQWERTYUIOJ]]",
+        "is_correct": false,
+        "type": "Shift"
+    },
+    {
+        "idx": "20",
+        "response": "[[KLZXCVBNMASDFGHJQWERTYUIOHJ]]",
+        "response_text": "[[KLZXCVBNMASDFGHJQWERTYUIOHJ]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "[[Upper-case letters string]]",
+        "response_text": "[[Upper-case letters string]]",
+        "answer": "[[C]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "20",
+        "response": "To decrypt the ciphertext \"SMSUHSYIZRZ\" with a period of 8 and an increment of 1, we follow these steps:\n\nGiven:\n- Ciphertext: \"SMSUHSYIZRZ\"\n- Period: 8\n- Increment: 1\n- Current inner_disk: \"KLZXCVBNMASDFGHJQWERTYUIOJ\"\n\nUsing the decryption steps:\n\n1. Take the first character of the ciphertext, \"S\", and follow the decryption process as follows:\n\n   - In the current inner_disk = \"KLZXCVBNMASDFGHJQWERTYUIOJ\", find the correspondent of \"S\". This is not in the current inner_disk, so we need to perform the rotation based on the period and increment to match.\n   - To rotate the inner_disk, we need to perform the inverse of the rotation performed during encryption. That means, rotating 4 characters to the right after every 8 characters (period).\n\n2. After encrypting 'S' (or attempting to find its position if it does not match in the current inner_disk), we will apply the same process to the next character in the ciphertext.\n\nLet's find and decrypt \"S\" using the rotation logic:\n\n```\noriginal_inner_disk = \"JKLZXCVBNMASDFGHJQWERTYUIOP\"\nrotation = 4 (since the period is 8 and increment is 1)\nciphertext_char = \"S\"\nfound_in_inner_disk_position = find(ciphertext_char, original_inner_disk)\n\nif found_in_inner_disk_position:\n    decrypted_char = original_inner_disk[(found_in_inner_disk_position - 1) % 10] \nelse:\n    # If ciphertext_char is not in the original inner_disk, perform rotation\n    for i in range(0, 10):  # There are 10 characters to rotate\n        rotated_inner_disk = rotate_right(original_inner_disk, rotation)\n        found_in_rotated_disk_position = find(ciphertext_char, rotated_inner_disk)\n        if found_in_rotated_disk_position:\n            decrypted_char = rotated_inner_disk[(found_in_rotated_disk_position - 1) % 10]\n            break\n        rotation += 1 # Continue rotating and checking until we find the character\n        \nprint(decimal_to_uppercase(decrypted_char))\n```\n\nAfter performing this process for each character of the ciphertext \"SMSUHSYIZRZ\", we get the decrypted plaintext. Let's perform the operation for \"S\".\n\n```\noriginal_inner_disk = \"JKLZXCVBNMASDFGHJQWERTYUIOP\"\nrotation = 4\nciphertext_char = \"S\"\n\n# Circular rotation logic to find the correct position after rotation\ndef rotate_right(input_string, rotations):\n    if rotations >= len(input_string):\n        rotations -= len(input_string)\n    return input_string[rotations:] + input_string[:rotations]\n\n# Finding position and adjusting for the rotation\nfor i in range(0, 10):\n    rotated_disk = rotate_right(original_inner_disk, i)\n    found_position = rotated_disk.find('S')\n    if found_position >= 0:\n        # Found position in the rotated inner_disk\n        break\n\ndecrypted_char = rotated_disk[(found_position - 1) % 10]\n\n# Convert decimal back to uppercase\ndecrypted_char = uppercase(decrypted_char)\nprint(decrypted_char)\n```\n\nAfter finding and decrypting \"S\", we continue the process for the remaining characters in the ciphertext. Note: The provided code is a conceptual approach and should be executed in a Python-like environment to get the actual decrypted plaintext step by step for the given ciphertext \"SMSUHSYIZRZ\".\n\n**Answer:** \nSince decryption is a step-by-step process, I cannot provide the full decryption output here. However, following the steps and logic provided, you should be able to decrypt the entire ciphertext \"SMSUHSYIZRZ\" to obtain the original plaintext. The decryption process involves rotating and searching within the rotated enciphered character grids until the original character is found.",
+        "response_text": "[[(found_in_inner_disk_position - 1) % 10]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Substitution"
+    },
+    {
+        "idx": "21",
+        "response": "To complete this task, let's follow the encryption rules step by step:\n\n1. **Cleans up plaintext**: The input is \"AV\". Since there are no spaces and alphabetic characters, no additional cleaning is required.\n\n2. **Convert to uppercase**: The plaintext is already in uppercase.\n\n3. **Convert to even length if odd**: Since the length is already even, step 3 is not applicable.\n\n4. **Split into two-letter groups**: The plaintext \"AV\" can be directly split into two-letter groups. However, remember that if the process of specifying two-character groups leads to an odd length in the original plaintext, an 'X' would be added to make it even, which is not the case here.\n\nSo, the two-letter groups obtained by performing the stated steps are **[AV]**.",
+        "response_text": "[[AV]]",
+        "answer": "[[AV]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "21",
+        "response": "[[(('1', '4'), ('1', '4'))]]",
+        "response_text": "[[(('1', '4'), ('1', '4'))]]",
+        "answer": "[[((3,0),(2,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "21",
+        "response": "[[E, B]]",
+        "response_text": "[[E, B]]",
+        "answer": "[[PF]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "22",
+        "response": "[['V', 'B']]",
+        "response_text": "[['V', 'B']]",
+        "answer": "[[VB]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "22",
+        "response": "[[((\"0\", \"4\"), (\"1\", \"4\"))]]",
+        "response_text": "[[((\"0\", \"4\"), (\"1\", \"4\"))]]",
+        "answer": "[[((4,0),(1,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "22",
+        "response": "To decrypt the ciphertext \"VB\" using the specified 5x5 grids, follow these steps:\n\n1. **Identify Locations**: Location of 'V' = (4, 0) in Girds 2 & 3, Location of 'B' = (1, 2) in Girds 2 & 3.\n2. **Equivalent Letters**:\n   - Gird 2 (for 'V'): 'Y'\n   - Gird 3 (for 'V'): 'I'\n   - Gird 2 (for 'B'): 'E'\n   - Gird 3 (for 'B'): 'J'\n3. **Combine Letters**: [[E, J]]\n\nThus, the decryption result for the ciphertext \"VB\" is [[E, J]].",
+        "response_text": "[[E, J]]",
+        "answer": "[[FS]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "23",
+        "response": "[[EV]]",
+        "response_text": "[[EV]]",
+        "answer": "[[EV]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "23",
+        "response": "\\[ \\text{[[((0, 4), (4, 0))]]} \\]",
+        "response_text": "[[((0, 4), (4, 0))]]",
+        "answer": "[[((3,4),(2,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "23",
+        "response": "[[Y, C]]",
+        "response_text": "[[Y, C]]",
+        "answer": "[[UF]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "24",
+        "response": "[[\"GT\"]]",
+        "response_text": "[[\"GT\"]]",
+        "answer": "[[GT]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "24",
+        "response": "[[((4, 4), (1, 0))]]",
+        "response_text": "[[((4, 4), (1, 0))]]",
+        "answer": "[[((1,3),(0,3))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "24",
+        "response": "[[O, W]]",
+        "response_text": "[[O, W]]",
+        "answer": "[[TN]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "25",
+        "response": "[['BU']]",
+        "response_text": "[['BU']]",
+        "answer": "[[BU]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "25",
+        "response": "[[((0, 4), (0, 4))]]",
+        "response_text": "[[((0, 4), (0, 4))]]",
+        "answer": "[[((3,1),(1,4))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "25",
+        "response": "[[V, R]]",
+        "response_text": "[[V, R]]",
+        "answer": "[[RD]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "26",
+        "response": "[[\"CB\"]]",
+        "response_text": "[[\"CB\"]]",
+        "answer": "[[CB]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "26",
+        "response": "[[((1,0),(3,4))]]",
+        "response_text": "[[((1,0),(3,4))]]",
+        "answer": "[[((0,1),(1,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "26",
+        "response": "[[C, B]]",
+        "response_text": "[[C, B]]",
+        "answer": "[[LS]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "27",
+        "response": "[[BB]]",
+        "response_text": "[[BB]]",
+        "answer": "[[BB]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "27",
+        "response": "[[((\"0\", \"1\"), (\"3\", \"1\"))]]",
+        "response_text": "[[((\"0\", \"1\"), (\"3\", \"1\"))]]",
+        "answer": "[[((3,1),(3,1))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "27",
+        "response": "[[E, E]]",
+        "response_text": "[[E, E]]",
+        "answer": "[[RL]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "28",
+        "response": "[[\"IX\"]]",
+        "response_text": "[[\"IX\"]]",
+        "answer": "[[IX]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "28",
+        "response": "[[((1,1),(3,1))]]",
+        "response_text": "[[((1,1),(3,1))]]",
+        "answer": "[[((1,4),(1,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "28",
+        "response": "[[X, I]]",
+        "response_text": "[[X, I]]",
+        "answer": "[[UP]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[WDFE], [NKPX], [SVNX]]",
+        "response_text": "[[WDFE], [NKPX], [SVNX]]",
+        "answer": "[[WD,FE,NK,PX,SV,NX]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "29",
+        "response": "To encipher or decipher, we first need to :\n\n* Setup all 4 Girds (which are already provided),\n* Clean the input text by converting to uppercase and remove spaces,\n* Allocate an 'X' as padding if the length is odd,\n* Split text into two-letter pairs, and,\n* If needed for encryption - map pairs to another grid,\n                          or for decryption - reverse encode circles.\n\n**Input**: \nPurge \"WDFENKPXSVN\" to \"WDFENKPVNS\", pad with an 'X' becomes \"WDFENKPVNX\",\n+  **Materials**: \nGirds assume: \nGird_1|---K-L-M-N-O---P-R-S-T-U---V-W-X-Y-Z---A-B-C-D-E---\n0   |---F-G-H-I-J---K-L-M-N-P---S-U-W-Y-Z---A-B-C-D-E---\nGird_2|---E-C-H-O-A---B-D-F-G-I---J-K-L-M-N---P-R-S-T-U---V-W-X-Y-Z---\n0   |---V-O-R-T-E---X-A-B-C-D---F-G-H-I-J---K-L-M-N-P---S-U-W-Y-Z---A-B-C-D-E---\nGird_3|---V-O-R-T-E---X-A-B-C-D---F-G-H-I-J---K-L-M-N-P---S-U-W-Y-Z---A-B-C-D-E---\n0   |---B-D-F-G-I---J-K-L-M-N---P-R-S-T-U---V-W-X-Y-Z---A-B-C-D-E---\nGird_4|---K-L-M-N-O---P-R-S-T-U---V-W-X-Y-Z---A-B-C-D-E---F-G-H-I-J---\n\n**Encryption** for WD:\n\nIn Gird_1, WD is found at [0,0] and [0,3] (Row, Column indexing)\nAnd Gird_4, WD is STILL at [0,0] and [0,3]\nMap to Gird_2 (by G_2[{0,0}] = B & {0,3} = I) and Gird_3 (by G_3[{0,0}] = V & {0,3} = Y):\nPair for WD  = BVIY\n\nProcess similarly for each character in the cleaned string:\n\nEN KING PXNX NS ->  QF NHDD PXDD NU\nFN KO NVNI US -> GW ZK DC US\n\nSo the encrypted string would be: **BVIYQFNDCGXZKUS**\n\n**Decryption** we'll now do on \"BVIYQFNDCGXZKUS\" back to \"WDFENKPVNX\":\n\nIn Gird_2 & Gird_3, extract first & second characters of each pair for寒冬:\n\nB -> {0,0} -> WDFENKV -> [W]\nV -> {0,3} -> WDFENKV -> [F]\nI -> {1,4} -> WDFENKV -> [D]\nY -> {4,4} -> WDFENKV -> [F]\nQ -> {1,3} -> WDFENK -> [D]\nF -> {0,4} -> WDFENK -> [K]\nN -> {2,4} -> KING -> [E]\nD -> {4,3} -> PXNX -> [P]\nC -> {0,2} -> XSN -> [S]\nG -> {2,3} -> US -> [U]\nX -> {4,2} -> NS -> [N]\nZ -> {3,3} -> NS -> [N]\nK -> {1,2} -> US -> [U]\nU -> {4,1} -> VT -> [V]\nS -> {3,2} -> WV -> [W]\nB -> {0,0} -> WDFENKV -> [V]\nI -> {0,3} -> WDFENKV -> [D]\nZ -> {4,0} -> KING -> [K]\nK -> {1,3} -> PXNX -> [L]\n\nProcess in echo fashion, reverse the steps for decryption, summing all letters into the final plaintext:\n**WDFENKPXSVN**",
+        "response_text": "[[0,0]]",
+        "answer": "[[((2,1),(3,3))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[O, Q]]",
+        "response_text": "[[O, Q]]",
+        "answer": "[[KN]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[((0, 4), (4, 0))]]",
+        "response_text": "[[((0, 4), (4, 0))]]",
+        "answer": "[[((4,0),(3,4))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[I, O]]",
+        "response_text": "[[I, O]]",
+        "answer": "[[VP]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[((1, 4), (4, 0))]]",
+        "response_text": "[[((1, 4), (4, 0))]]",
+        "answer": "[[((0,3),(0,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[L, X]]",
+        "response_text": "[[L, X]]",
+        "answer": "[[OV]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[\n[((3, 4), (4, 2))]\n]",
+        "response_text": "[[[((3, 4), (4, 2))]]",
+        "answer": "[[((1,0),(2,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[E, O]]",
+        "response_text": "[[E, O]]",
+        "answer": "[[BH]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[((2,4),(2,1))]]\n\n### Ciphertext:\nBased on the given encryption steps, the ciphertext for the plaintext \"WDFENKPXSVN\" would be calculated as follows:\n\n1. Clean up the plaintext:\n   - Remove spaces and non-alphabetic characters, and convert all letters to uppercase.\n   - \"WDFENKPXSVN\" becomes \"WDFENKPXS\".\n\n2. Add 'X' to make the length even if it's odd (in this case, it's already even).\n   - No change needed.\n\n3. Split the cleaned plaintext into two-letter groups.\n   - Groups are \"WD\", \"FE\", \"NP\", \"XS\".\n\n4. For each double-letter group:\n   - \"WD\" (Gird1 and Gird4) -> Find \"W\" and \"D\" as done in the question example.\n   - \"FE\" (Gird2 and Gird3) -> Find \"F\" in Gird2 as (1,4); find \"E\" in Gird3 as (4,0).\n   - \"NP\" (Gird1 and Gird4) -> Find \"N\" and \"P\" as done in the question example.\n   - \"XS\" (Gird2 and Gird3) -> Find \"X\" in Gird2 as (4,4); find \"S\" in Gird3 as (2,4).\n\nSo, the corresponding encryption in ciphertext will follow the pattern from the Gird placements, and the full encrypted text would be constructed according to the guidelines provided in the cipher rule. The first step would involve looking up each letter in the four grids based on its row and column, and then constructing the ciphertext according to the decryption process. Due to the complexity and constraints of constructing the full ciphertext satisfactorily via this simplistic text-based assistance model, the provided answer focuses purely on the logic applied through the \"SV\" query example for demonstration. Please ensure application to the full ciphertext according to the detailed steps laid out in the cipher rule given the entire plaintext \"WDFENKPXSVN\".",
+        "response_text": "[[((2,4),(2,1))]]",
+        "answer": "[[((1,2),(2,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "To find the letters corresponding to the positions ((1, 2) and (2, 0)) in the specified Girds, follow these steps:\n\n1. **Gird1 and Gird4** note that the position describes a row and a column. Here, we interpret the row and column values:\n   - Position (1, 2) in Gird1 (or, equivalently, Gird4) corresponds to:\n     - **Gird1**: V (row 1, column 2)\n     - **Gird4**: P (row 1, column 2)\n   - Position (2, 0) in Gird1 (or, equivalently, Gird4) corresponds to:\n     - **Gird1**: R (row 2, column 0)\n     - **Gird4**: M (row 2, column 0)\n\n2. **Gird2 and Gird3**:\n   - For position (1, 2) in Gird2 (which is the same as Gird3 due to their mirrored data layout):\n     - **Gird2**: X (row 1, column 2)\n     - **Gird3**: F (row 1, column 2)\n   - For position (2, 0) in Gird2 (which is also correct in Gird3 for the same mirrored layout):\n     - **Gird2**: R (row 2, column 0)\n     - **Gird3**: V (row 2, column 0)\n\n3. **Combining results**: The letters from Gird2 and Gird3 for the mapping are \"X\" and \"F\", corresponding to \"SV\" in the step from Gird1 to Gird4.\n\n**Therefore**, the encryption result of the double-letter combination \"SV\" would be represented as:\n```\n['X', 'F']\n```\n\nThis process demonstrates how a simple set of rules can transform parts of a message using predefined grids for each step of the encryption process, maintaining consistency throughout the transformation.",
+        "response_text": "[['X', 'F']]",
+        "answer": "[[FF]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[(((3,0),(4,4)))]]\nNote that in the format [([coordinate_1], [coordinate_2])], the coordinates are given in the order of Gird1, Gird4, Gird2, Gird3 respectively. So, for the first letter 'N' in Gird1 at (3, 0), the equivalent coordinates in Gird4 would be (4, 4) since both Gird1 and Gird4 have the same structure.",
+        "response_text": "[[(((3,0),(4,4)))]]",
+        "answer": "[[((0,3),(2,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "29",
+        "response": "[[G, D]]",
+        "response_text": "[[G, D]]",
+        "answer": "[[OH]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[\"CH\"], [\"LV\"], [\"YV\"], [\"CG\"], [\"UM\"], [\"RH\"]]",
+        "response_text": "[[\"CH\"], [\"LV\"], [\"YV\"], [\"CG\"], [\"UM\"], [\"RH\"]]",
+        "answer": "[[CH,LV,YV,CG,UM,RH]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "30",
+        "response": "[[((1, 2),(4, 4))]]",
+        "response_text": "[[((1, 2),(4, 4))]]",
+        "answer": "[[((0,1),(2,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[G, I]]",
+        "response_text": "[[G, I]]",
+        "answer": "[[LX]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "To find the positions for the double-letter combination \"LV\" in Gird2 and Gird3, we refer to the respective grids:\n\n**Gird2:** \n```\nE  C  H  O  A \nB  D  F  G  I \nJ  K  L  M  N \nP  R  S  T  U \nV  W  X  Y  Z\n```\n\n**Gird3:** \n```\nV  O  R  T  E \nX  A  B  C  D \nF  G  H  I  J \nK  L  M  N  P \nS  U  W  Y  Z\n```\n\nFor letter \"L\" in Gird2:\n- Row: 3, Column: 1 (position (3, 1))\n\nFor letter \"V\" in Gird3:\n- Row: 4, Column: 4 (position (4, 4))\n\nThe output, in the specified format, is:\n\n```\n[[(3, 1), (4, 4)]]\n```",
+        "response_text": "[[(3, 1), (4, 4)]]",
+        "answer": "[[((2,2),(0,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[M, S]]",
+        "response_text": "[[M, S]]",
+        "answer": "[[XK]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[((2, 2), (0, 4))]]",
+        "response_text": "[[((2, 2), (0, 4))]]",
+        "answer": "[[((4,3),(0,0))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[K, A]]",
+        "response_text": "[[K, A]]",
+        "answer": "[[IK]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[((4, 3), (4, 5))]()]",
+        "response_text": "[[[((4, 3), (4, 5))]]",
+        "answer": "[[((0,1),(2,1))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[E, O]]",
+        "response_text": "[[E, O]]",
+        "answer": "[[LW]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[((1, 4), (1, 3))]]",
+        "response_text": "[[((1, 4), (1, 3))]]",
+        "answer": "[[((3,4),(3,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[V, K]]",
+        "response_text": "[[V, K]]",
+        "answer": "[[EC]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[((2, 1), (3, 1))]]\n\nTo decrypt the given ciphertext \"CHLVYVCGUMRH\", follow the decryption rules. Start by identifying each double-letter group of the ciphertext. In this case, our double-letter groups are \"CH\", \"LV\", \"YV\", \"CG\", \"UM\", and \"RH\".\n\nNow, decrypt each double-letter group as follows:\n1. For \"CH\":\n    - In Gird2 and Gird3, find the positions of \"C\" and \"H\".\n    - In Gird2, \"C\" is at position (1, 2) and \"H\" is at position (1, 7).\n    - In Gird3, \"C\" is at position (4, 0) and \"H\" is at position (4, 5).\n    - Since Gird2 and Gird3 use a different arrangement from the other grids, we need to combine the outputs from both grids to decrypt \"CH\". The combined output is ((1, 2), (1, 7)).\n2. Repeat the process for the remaining double-letter groups, using the corresponding encryption grids (Gird1 and Gird4) for the first letter and the decryption grids (Gird2 and Gird3) for the second letter.\n\nAfter decrypting all double-letter groups, concatenate the results to form the final plaintext.",
+        "response_text": "[[((2, 1), (3, 1))]]",
+        "answer": "[[((3,1),(2,2))]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "30",
+        "response": "[[H, I]]",
+        "response_text": "[[H, I]]",
+        "answer": "[[BX]]",
+        "is_correct": false,
+        "type": "Mapping"
+    },
+    {
+        "idx": "31",
+        "response": "[[\"WHFI\"]]",
+        "response_text": "[[\"WHFI\"]]",
+        "answer": "[[WHFI]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "31",
+        "response": "[['W', '', '', ''],\n ['H', '', '', ''],\n ['F', '', '', ''],\n ['I', '', '', '']]",
+        "response_text": "[['W', '', '', ''],\n ['H', '', '', ''],\n ['F', '', '', ''],\n ['I', '', '', '']]",
+        "answer": "[['', '', '', ''], ['', '', 'W', 'H'], ['', '', '', 'F'], ['I', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "31",
+        "response": "[['', '', '', '#'], ['','','',''], ['','','',''], ['#', '', '', '']]",
+        "response_text": "[['', '', '', '#'], ['','','',''], ['','','',''], ['#', '', '', '']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'W', 'H'], ['#', '#', '#', 'F'], ['I', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "32",
+        "response": "[['######UH###MF###']]",
+        "response_text": "[['######UH###MF###']]",
+        "answer": "[[######UH###MF###]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "32",
+        "response": "[\n    ['T', ' ', ' ', ' '],\n    ['#', ' ', 'H', ' '],\n    ['#', ' ', ' ', 'M'],\n    ['#', ' ', ' ', 'F']\n]",
+        "response_text": "[[['T', ' ', ' ', ' ']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'U', 'H'], ['#', '#', '#', 'M'], ['F', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "32",
+        "response": "[[\"U\", \"H\"], [\"M\", \"F\"]]",
+        "response_text": "[[\"U\", \"H\"], [\"M\", \"F\"]]",
+        "answer": "[[UHMF]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "33",
+        "response": "[[PBXSYAFH]]",
+        "response_text": "[[PBXSYAFH]]",
+        "answer": "[[PBXSYAFH]]",
+        "is_correct": true,
+        "type": null
+    },
+    {
+        "idx": "33",
+        "response": "To follow the encryption rules for the given plaintext \"PBXSYAFH\" and initial template [[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]], the initial and filled-in grid is given as:\n\n```\n[['P', 'B', 'X', 'S'],\n ['Y', 'A', 'F', 'H'],\n ['Y', 'A', ' ', ' '],\n [' ', ' ', ' ', ' ']]\n```\n\nHere, the letters from the plaintext \"PBXSYAFH\" have been placed through the holes of the template as described in the encryption process. The spaces in the grid represent the template's holes and unfilled positions to accommodate the full block. The final grid is represented with the letters in their respective positions, respecting the \"holes\" defined by the template.",
+        "response_text": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "answer": "[['', '', '', ''], ['', '', 'P', 'B'], ['', '', '', 'X'], ['S', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "33",
+        "response": "[[False, True, True, False], [True, True, False, False], [False, False, True, True], [True, True, True, True]]",
+        "response_text": "[[False, True, True, False], [True, True, False, False], [False, False, True, True], [True, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "33",
+        "response": "[['', '', 'P', 'B'], ['', '', 'X', 'S'], ['', '', '', 'Y'], ['S', '', '', 'F']]",
+        "response_text": "[['', '', 'P', 'B'], ['', '', 'X', 'S'], ['', '', '', 'Y'], ['S', '', '', 'F']]",
+        "answer": "[['', 'Y', 'A', ''], ['', 'F', 'P', 'B'], ['', '', '', 'X'], ['S', '', '', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "33",
+        "response": "[['', '', '', '#'], ['','','',''], ['','','',''], ['','','','#']]",
+        "response_text": "[['', '', '', '#'], ['','','',''], ['','','',''], ['','','','#']]",
+        "answer": "[['#', 'Y', 'A', '#'], ['#', 'F', 'P', 'B'], ['#', '#', '#', 'X'], ['S', '#', '#', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "34",
+        "response": "[['#YO##FWF###VT##L']]",
+        "response_text": "[['#YO##FWF###VT##L']]",
+        "answer": "[[#YO##FWF###VT##L]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "34",
+        "response": "[['#', 'Y', 'O', '#'],\n [' ', ' ', ' ', ' '],\n ['F', 'W', 'F', ' '],\n [' ', ' ', ' ', 'V'],\n [' ', ' ', ' ', 'T'],\n [' ', ' ', ' ', 'L']]",
+        "response_text": "[['#', 'Y', 'O', '#'],\n [' ', ' ', ' ', ' '],\n ['F', 'W', 'F', ' '],\n [' ', ' ', ' ', 'V'],\n [' ', ' ', ' ', 'T'],\n [' ', ' ', ' ', 'L']]",
+        "answer": "[['#', 'Y', 'O', '#'], ['#', 'F', 'W', 'F'], ['#', '#', '#', 'V'], ['T', '#', '#', 'L']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "34",
+        "response": "Based on the provided ciphertext \"#YO##FWF###VT##L\" and the current grid [['#', 'Y', 'O', '#'], ['#', 'F', 'W', 'F'], ['#', '#', '#', 'V'], ['T', '#', '#', 'L']], the decryption process will be as follows:\n\n1. Place the template with holes onto the current grid.\n2. Read the letters visible through the holes on the grid.\n\nGiven the current template [[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]] and grid [['#', 'Y', 'O', '#'], ['#', 'F', 'W', 'F'], ['#', '#', '#', 'V'], ['T', '#', '#', 'L']], the grid places that will correspond to the \"holes\" of the template are:\n\n- Position 1 (first row) -> #, (hidden)\n- Position 2 (second row) -> F, W\n- Position 3 (third row) -> #, V (hidden)\n- Position 4 (remaining row) -> T, L\n\nRead the letters visible through the template's \"holes\" from the grid:\n\n- \"Position 2\" reads \"FW\"\n- \"Position 4\" reads \"TL\"\n\nIn the [[...]] format, the decrypted letters for this specific round are:\n\n[[FW], [TL]]",
+        "response_text": "[['#', 'Y', 'O', '#'], ['#', 'F', 'W', 'F'], ['#', '#', '#', 'V'], ['T', '#', '#', 'L']]",
+        "answer": "[[WFVT]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "34",
+        "response": "[[False, True, True, True], [True, True, False, False], [True, True, True, True], [True, True, True, True]]",
+        "response_text": "[[False, True, True, True], [True, True, False, False], [True, True, True, True], [True, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "34",
+        "response": "[[\"F\", \"W\", \"V\", \"T\"]]",
+        "response_text": "[[\"F\", \"W\", \"V\", \"T\"]]",
+        "answer": "[[YOFL]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "35",
+        "response": "[[ZWOUBDSPFOXU]]",
+        "response_text": "[[ZWOUBDSPFOXU]]",
+        "answer": "[[ZWOUBDSPFOXU]]",
+        "is_correct": true,
+        "type": "Partition"
+    },
+    {
+        "idx": "35",
+        "response": "[['Z', 'W', 'O', 'U'], ['B', 'D', 'S', 'P'], ['F', 'O', 'X', 'U'], ['','','','']]",
+        "response_text": "[['Z', 'W', 'O', 'U'], ['B', 'D', 'S', 'P'], ['F', 'O', 'X', 'U'], ['','','','']]",
+        "answer": "[['', '', '', ''], ['', '', 'Z', 'W'], ['', '', '', 'O'], ['U', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "35",
+        "response": "[[False, True, True, True], [True, True, True, False], [False, True, False, False], [True, True, True, True]]",
+        "response_text": "[[False, True, True, True], [True, True, True, False], [False, True, False, False], [True, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "35",
+        "response": "['Z', 'R', 'O', 'B'], [' ', ' ', ' ', 'S'], [' ', ' ', ' ', 'P'], ['F', 'G', 'H', '#']]",
+        "response_text": "[['Z', 'R', 'O', 'B']]",
+        "answer": "[['', 'B', 'D', ''], ['', 'S', 'Z', 'W'], ['', '', '', 'O'], ['U', '', '', 'P']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "35",
+        "response": "[[True, True, False, True], [True, True, True, False], [False, False, True, True], [True, True, True, True]]",
+        "response_text": "[[True, True, False, True], [True, True, True, False], [False, False, True, True], [True, True, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "35",
+        "response": "[['Z', 'W', 'O', 'B'],\n ['D', 'S', 'P', 'D'],\n ['F', 'X', 'U', 'Z'],\n ['O', 'F', 'B', 'W']]",
+        "response_text": "[['Z', 'W', 'O', 'B'],\n ['D', 'S', 'P', 'D'],\n ['F', 'X', 'U', 'Z'],\n ['O', 'F', 'B', 'W']]",
+        "answer": "[['', 'B', 'D', 'F'], ['O', 'S', 'Z', 'W'], ['X', 'U', '', 'O'], ['U', '', '', 'P']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "35",
+        "response": "After filling the visible holes and performing the required rotations, the grid looks like this:\n\n[['', 'B', 'D', 'F'], ['O', 'S', 'Z', 'W'], ['X', 'U', '', 'O'], ['U', '', '', 'P']]\n\nSince the grid is not yet full, we need to fill in the rest of the positions with filler characters ('#') to complete the 4x4 grid:\n\n[['', 'B', 'D', 'F'], ['O', 'S', 'Z', 'W'], ['X', 'U', '#', 'O'], ['#', '#', '#', 'P']]",
+        "response_text": "[['', 'B', 'D', 'F'], ['O', 'S', 'Z', 'W'], ['X', 'U', '', 'O'], ['U', '', '', 'P']]",
+        "answer": "[['#', 'B', 'D', 'F'], ['O', 'S', 'Z', 'W'], ['X', 'U', '#', 'O'], ['U', '#', '#', 'P']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "36",
+        "response": "[['#CVR', 'A', 'VGD', 'GI'], ['#R', 'N', 'R', '#AA']]",
+        "response_text": "[['#CVR', 'A', 'VGD', 'GI'], ['#R', 'N', 'R', '#AA']]",
+        "answer": "[[#CVRAVDGIR#NR##A]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "36",
+        "response": "[['C', 'V', 'R', 'A'],\n ['-', '-', '-', '-'],\n ['-', '-', '-', '-'],\n ['-', '-', '-', '-']]",
+        "response_text": "[['C', 'V', 'R', 'A'],\n ['-', '-', '-', '-'],\n ['-', '-', '-', '-'],\n ['-', '-', '-', '-']]",
+        "answer": "[['#', 'C', 'V', 'R'], ['A', 'V', 'D', 'G'], ['I', 'R', '#', 'N'], ['R', '#', '#', 'A']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "36",
+        "response": "[[D, G, N, R]]",
+        "response_text": "[[D, G, N, R]]",
+        "answer": "[[DGNR]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "36",
+        "response": "[[True, True, False, False], [True, True, True, True], [False, True, True, True], [True, True, True, False]]",
+        "response_text": "[[True, True, False, False], [True, True, True, True], [False, True, True, True], [True, True, True, False]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "36",
+        "response": "[[G, V, N, R]]",
+        "response_text": "[[G, V, N, R]]",
+        "answer": "[[CVVA]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "36",
+        "response": "[[True, True, False, True], [True, True, True, True], [False, True, True, True], [True, True, True, False]]",
+        "response_text": "[[True, True, False, True], [True, True, True, True], [False, True, True, True], [True, True, True, False]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "36",
+        "response": "[[B, E, X, G]]",
+        "response_text": "[[B, E, X, G]]",
+        "answer": "[[RAIR]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "37",
+        "response": "[['KGVP', 'AROI', 'FNR', 'IDFF'], ['HEZI']]",
+        "response_text": "[['KGVP', 'AROI', 'FNR', 'IDFF'], ['HEZI']]",
+        "answer": "[[KGVPAROIOFNRIDFF,HEZI]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "37",
+        "response": "To solve this problem, we will perform the following steps:\n\n1. **Template Placement**: Position the template on the grid as given and fill the grid according to the template holes.\n2. **Grid Filling**: Fill the grid with characters Sequentially.\n\n**Step 1: Template Placement**\n\nGiven Template [[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]\n\nGrid: [['', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]\n\n**Step 2: Grid Filling**\n\n- **First Step**: Fill positions according to template holes applying the plaintext: \"KGVPAROIOFNRIDFF\"\n  - Using the given template holes, we can fill out the right side first (positions with values in the template) and leave the rest blank ('') for now:\n    \n    After applying 'K', G, V, and P into their positions:\n    \n    ```\n    [['K', '', '', ''],\n     ['', '', '', ''],\n     ['', '', '', ''],\n     ['', '', '', '']]\n    ```\n    \n    Now apply 'A', R, O, and I using the template holes:\n\n    ```\n    [['K', 'A', '', ''],\n     ['', '', '', ''],\n     ['', '', 'O', ''],\n     ['', 'R', '', '']]\n    ```\n    \n    Finally, put 'F', N, R, and D after applying the template holes:\n\n    ```\n    [['K', 'A', 'F', ''],\n     ['', 'N', '', ''],\n     ['', 'O', 'R', ''],\n     ['D', 'R', '', '']]\n    ```\n    \n    We've used 'F' and 'R' in their respective positions. Leave places not determined by the 'False' holes undefined (''):\n    \n    We've determined the top row 'KAF' so far. For the rest, leave places as they are, filled or empty:\n\n    ```\n    [['K', 'A', 'F', ''],\n     ['', 'N', '', ''],\n     ['', 'O', 'R', ''],\n     ['D', 'R', '', '']]\n    ```\n    \nA tentative grid fill after the first iteration with the top row filled:\n\n```\n[\n  ['K', 'A', 'F', ''],\n  ['N', '', '', ''],\n  ['O', 'R', '', ''],\n  ['D', 'R', '', '']\n]\n```\n\n**Final Step**: Apply the remaining letters to fill the grid. We place 'I' next, considering the template holes.\n\n```\n[\n  ['K', 'A', 'F', ''],\n  ['N', 'I', '', ''],\n  ['O', 'R', '', ''],\n  ['D', 'R', '', '']\n]\n```\n\nThis is the grid after applying all 16 letters according to the template holes with the letters fitting the positions determined by the 'True' values in the template. With 'I' appended and the remaining grid left empty, our final grid looks like this:\n\n```\n[\n  ['K', 'A', 'F', ''],\n  ['N', 'I', '', ''],\n  ['O', 'R', '', ''],\n  ['D', 'R', '', '']\n]\n```\n\n### Answer:\nThe filled-in grid is:\n\n```\n[\n  ['K', 'A', 'F', ''],\n  ['N', 'I', '', ''],\n  ['O', 'R', '', ''],\n  ['D', 'R', '', '']\n]\n```",
+        "response_text": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "answer": "[['', '', '', ''], ['', '', 'K', 'G'], ['', '', '', 'V'], ['P', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "[[False, True, True, False], [True, True, False, True], [True, True, True, False], [False, True, True, True]]",
+        "response_text": "[[False, True, True, False], [True, True, False, True], [True, True, True, False], [False, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "37",
+        "response": "[['K', '', '', 'G'],\n ['','G','A','O'],\n ['','O','I','O'],\n ['','R','I','F']]\n",
+        "response_text": "[['K', '', '', 'G'],\n ['','G','A','O'],\n ['','O','I','O'],\n ['','R','I','F']]",
+        "answer": "[['', 'A', 'R', ''], ['', 'O', 'K', 'G'], ['', '', '', 'V'], ['P', '', '', 'I']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "Rotated Template: [[False, False, True, False], [True, True, True, True], [True, True, True, True], [True, False, True, True]]",
+        "response_text": "[[False, False, True, False], [True, True, True, True], [True, True, True, True], [True, False, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "37",
+        "response": "After placing the template with holes on the blank grid and filling the grid with the letters of the plaintext message \"KGVPAROIOFNRIDFF\" in order through the holes in the template, the filled-in grid in the required format is:\n\n[['K', 'G', 'P', ''], \n ['', 'A', 'R', 'O'], \n ['V', ' ', 'I', ''], \n ['F', 'N', 'D', 'F']]",
+        "response_text": "[['K', 'G', 'P', ''], \n ['', 'A', 'R', 'O'], \n ['V', ' ', 'I', ''], \n ['F', 'N', 'D', 'F']]",
+        "answer": "[['', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', '', 'V'], ['P', '', '', 'I']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "[[True, True, True, False], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "response_text": "[[True, True, True, False], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "37",
+        "response": "[\n['', 'K', 'G', 'O'],\n['F', 'O', 'A', 'R'],\n['N', 'R', 'P', 'V'],\n['I', '', '', '']\n]",
+        "response_text": "[[['', 'K', 'G', 'O']]",
+        "answer": "[['I', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', 'D', 'V'], ['P', 'F', 'F', 'I']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "[[False, True, False, True],\n [True, True, False, True],\n [True, True, False, False],\n [True, True, True, True]]",
+        "response_text": "[[False, True, False, True],\n [True, True, False, True],\n [True, True, False, False],\n [True, True, True, True]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "37",
+        "response": "[['I', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', 'D', 'V'], ['P', 'F', 'F', 'I']]\n\nSince the message is long enough to fill the grid completely without needing filler characters, the grid after supplement is the same as the one filled with letters:\n\n[['I', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', 'D', 'V'], ['P', 'F', 'F', 'I']]",
+        "response_text": "[['I', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', 'D', 'V'], ['P', 'F', 'F', 'I']]",
+        "answer": "[['I', 'A', 'R', 'O'], ['F', 'O', 'K', 'G'], ['N', 'R', 'D', 'V'], ['P', 'F', 'F', 'I']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "[['H', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]",
+        "response_text": "[['H', '', '', ''], ['', '', '', ''], ['', '', '', ''], ['', '', '', '']]",
+        "answer": "[['', '', '', ''], ['', '', 'H', 'E'], ['', '', '', 'Z'], ['I', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "37",
+        "response": "[['', '', '', '#'],\n ['','','#',''],\n ['','','#',''],\n ['','Z','E','H']]",
+        "response_text": "[['', '', '', '#'],\n ['','','#',''],\n ['','','#',''],\n ['','Z','E','H']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'H', 'E'], ['#', '#', '#', 'Z'], ['I', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "38",
+        "response": "[\"TCPMYVPGTCVSFOB\", \"R######OT###EO###\"]",
+        "response_text": "[[\"TCPMYVPGTCVSFOB\", \"R######OT###EO###\"]]",
+        "answer": "[[TCPMYVPGTCVSFOBR,######OT###EO###]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "38",
+        "response": "[['T', 'C', 'P', 'M'],\n ['Y', 'V', 'P', 'G'],\n ['T', 'C', 'S', 'V'],\n ['F', 'O', 'B', 'R']]",
+        "response_text": "[['T', 'C', 'P', 'M'],\n ['Y', 'V', 'P', 'G'],\n ['T', 'C', 'S', 'V'],\n ['F', 'O', 'B', 'R']]",
+        "answer": "[['T', 'C', 'P', 'M'], ['Y', 'V', 'P', 'G'], ['T', 'C', 'V', 'S'], ['F', 'O', 'B', 'R']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "38",
+        "response": "[[T, C, V, F]]",
+        "response_text": "[[T, C, V, F]]",
+        "answer": "[[PGSF]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "38",
+        "response": "[[False, True, True, True], [True, False, True, True], [True, True, False, True], [True, True, True, False]]",
+        "response_text": "[[False, True, True, True], [True, False, True, True], [True, True, False, True], [True, True, True, False]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "38",
+        "response": "[[..., ..., ..., ...], [...], [...], [...]]",
+        "response_text": "[[..., ..., ..., ...], [...], [...], [...]]",
+        "answer": "[[CPVR]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "38",
+        "response": "[[True, True, True, True], [True, True, True, False], [True, False, True, True], [False, True, False, True]]",
+        "response_text": "[[True, True, True, True], [True, True, True, False], [True, False, True, True], [False, True, False, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "38",
+        "response": "[[C, P, G, P], [T, V, S, V], [V, Y, C, T], [R, F, B, F]]",
+        "response_text": "[[C, P, G, P], [T, V, S, V], [V, Y, C, T], [R, F, B, F]]",
+        "answer": "[[MYTC]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "38",
+        "response": "[[False, True, True, True], [True, True, True, False], [True, True, False, False], [True, False, True, True]]",
+        "response_text": "[[False, True, True, True], [True, True, True, False], [True, True, False, False], [True, False, True, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "38",
+        "response": "[[['P'], ['G', 'S'], ['F', 'C', 'P', 'V'], ['R', 'M', 'Y', 'T']]@PostMapping]",
+        "response_text": "[[['P'], ['G', 'S'], ['F', 'C', 'P', 'V'], ['R', 'M', 'Y', 'T']]",
+        "answer": "[[TVOB]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "38",
+        "response": "[[True, False, True, True], [False, True, True, False], [True, True, True, True], [True, True, False, True]]",
+        "response_text": "[[True, False, True, True], [False, True, True, False], [True, True, True, True], [True, True, False, True]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "38",
+        "response": "[['T', 'C', 'P', 'M'],\n ['Y', 'V', 'P', 'G'],\n ['T', 'C', 'V', 'S'],\n ['F', 'O', 'B', '#'],\n ['#', 'T', 'O', 'T'],\n ['#', '#', 'O', '#'],\n ['#', '#', 'E', 'O']]",
+        "response_text": "[['T', 'C', 'P', 'M'],\n ['Y', 'V', 'P', 'G'],\n ['T', 'C', 'V', 'S'],\n ['F', 'O', 'B', '#'],\n ['#', 'T', 'O', 'T'],\n ['#', '#', 'O', '#'],\n ['#', '#', 'E', 'O']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'O', 'T'], ['#', '#', '#', 'E'], ['O', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "38",
+        "response": "`[[O, T, E, O]]`",
+        "response_text": "[[O, T, E, O]]",
+        "answer": "[[OTEO]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "39",
+        "response": "[[GZHYAWHHUASA, PLMPWMAUMS, RHANOSXPWD, BRIN]]",
+        "response_text": "[[GZHYAWHHUASA, PLMPWMAUMS, RHANOSXPWD, BRIN]]",
+        "answer": "[[GZHYAWHHUASPLMPW,MAUMSRHANOSXPWDB,RIN]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "39",
+        "response": "[['G', 'Z', 'H', 'Y'], ['A', 'W', 'H', 'H'], ['U', 'A', 'S', 'P'], ['L', 'M', 'P', 'W']]",
+        "response_text": "[['G', 'Z', 'H', 'Y'], ['A', 'W', 'H', 'H'], ['U', 'A', 'S', 'P'], ['L', 'M', 'P', 'W']]",
+        "answer": "[['', '', '', ''], ['', '', 'G', 'Z'], ['', '', '', 'H'], ['Y', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[False, True, True, False], [False, True, True, True], [True, True, True, True], [True, False, False, True]]",
+        "response_text": "[[False, True, True, False], [False, True, True, True], [True, True, True, True], [True, False, False, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[\"#\", \"#\", \"#\", \"G\"], [\"#\", \"#\", \"Z\", \"\"], [\"#\", \"H\", \"\", \"\"], [\"Y\", \"\", \"\", \"#\"]",
+        "response_text": "[[\"#\", \"#\", \"#\", \"G\"]]",
+        "answer": "[['', 'A', 'W', ''], ['', 'H', 'G', 'Z'], ['', '', '', 'H'], ['Y', '', '', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[False, False, False, True], [True, True, False, True], [True, True, True, False], [True, True, True, True]]",
+        "response_text": "[[False, False, False, True], [True, True, False, True], [True, True, True, False], [True, True, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['A', 'H', '', 'W'],\n ['G', 'Z', '', ''],\n ['W', '', '', ''],\n ['H', '', '', '']]",
+        "response_text": "[['A', 'H', '', 'W'],\n ['G', 'Z', '', ''],\n ['W', '', '', ''],\n ['H', '', '', '']]",
+        "answer": "[['', 'A', 'W', 'U'], ['A', 'H', 'G', 'Z'], ['S', 'P', '', 'H'], ['Y', '', '', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[True, True, False, True], [True, False, False, True], [True, True, True, True], [True, True, True, True]]",
+        "response_text": "[[True, True, False, True], [True, False, False, True], [True, True, True, True], [True, True, True, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['G', 'A', 'A', 'N'], ['Y', 'H', 'S', 'P'], ['W', 'G', 'Y', 'Z'], ['U', 'Z', 'H', 'A']]",
+        "response_text": "[['G', 'A', 'A', 'N'], ['Y', 'H', 'S', 'P'], ['W', 'G', 'Y', 'Z'], ['U', 'Z', 'H', 'A']]",
+        "answer": "[['L', 'A', 'W', 'U'], ['A', 'H', 'G', 'Z'], ['S', 'P', 'M', 'H'], ['Y', 'P', 'W', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]] rotated 90 degrees counterclockwise becomes:\n\n[[True, True, True, False], [True, True, False, True], [True, True, True, True], [True, False, True, True]]",
+        "response_text": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['Y', 'P', 'W', 'H'], ['H', 'Z', 'A', 'L'], ['#', '#', 'S', 'A'], ['#', '#', 'M', 'G']]",
+        "response_text": "[['Y', 'P', 'W', 'H'], ['H', 'Z', 'A', 'L'], ['#', '#', 'S', 'A'], ['#', '#', 'M', 'G']]",
+        "answer": "[['L', 'A', 'W', 'U'], ['A', 'H', 'G', 'Z'], ['S', 'P', 'M', 'H'], ['Y', 'P', 'W', 'H']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[['M', 'A', 'U', 'M'], ['', '', 'S', 'R'], ['H', 'A', 'N', 'O'], ['S', 'X', 'P', 'W']]",
+        "response_text": "[['M', 'A', 'U', 'M'], ['', '', 'S', 'R'], ['H', 'A', 'N', 'O'], ['S', 'X', 'P', 'W']]",
+        "answer": "[['', '', '', ''], ['', '', 'M', 'A'], ['', '', '', 'U'], ['M', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[True, True, True, False], [True, True, True, True], [True, False, True, True], [False, False, False, True]]",
+        "response_text": "[[True, True, True, False], [True, True, True, True], [True, False, True, True], [False, False, False, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "To fill the grid, we need to consider the template positions and the plaintext. The template positions with holes (False values) allow characters to be placed, while the positions without holes (True values) prevent characters from being placed. The current grid is partially populated by the letters from the plaintext:\n\n```\n[['', '', '', ''],\n ['', '', 'M', 'A'],\n ['', '', '', ''],\n ['M', '', '', '']]\n```\n\nThe template positions are:\n\n```\n[[True, False, False, True],\n [True, False, True, True],\n [True, True, True, True],\n [True, True, True, False]]\n```\n\nWe will place the first 4 letters of the plaintext (\"MAUM\") into the grid through the holes in the template:\n\n1. For the first position in the template (top-left, False value): \"M\" is placed.\n2. For the third position in the template (second, False value): \"A\" is placed.\n3. For the fourth position in the template (bottom-right, True value): \"U\" cannot be placed here as it's a True value, so we'll leave it as ''.\n4. For the second position in the template (second, False value): \"M\" is placed in the grid.\n\nNow, we will update the grid:\n\n```\n[['', '', '', ''],\n ['', '', 'M', ''],\n ['', '', '', ''],\n ['M', '', '', '']]\n```\n\nNext, we need to rotate the template 90 degrees counterclockwise based on which cells in the grid currently are full (containing letters):\n\n- The grid is as follows:\n\n```\n[['', '', '', ''],\n ['', '', 'M', ''],\n ['', '', '', ''],\n ['M', '', '', '']]\n```\n\n- Cells with letters (M and '' in the second column) indicate that the system needs to rotate the template one position to the left to allow filling in the next letter.\n\n**Updated template:**\n\n```\n[[False, False, True, True],\n [False, True, True, True],\n [True, True, True, True],\n [True, True, True, False]]\n```\n\nNext, we proceed to fill in the letters for the second 4-letter block of the plaintext (\"SRHN\") into the updated grid:\n\n1. Place \"S\" in the grid, considering the new template positions:\n   - For the first position in the new template (top-left, False value): \"S\" is placed.\n\n2. Place \"R\" in the grid:\n   - For the second position in the new template (top-middle, False value): \"R\" is placed.\n\n3. Place \"H\" in the grid:\n   - For the third position in the new template (top-right, False value): \"H\" is placed.\n\n4. Place \"N\" in the grid:\n   - For the fourth position in the new template (bottom-right, True value): \"N\" cannot be placed here as it's a True value, so we'll leave it as ''.\n\nNow, the grid is updated:\n\n```\n[['', '', 'S', ''],\n ['S', 'R', 'H', ''],\n ['', 'R', 'H', ''],\n ['S', 'R', 'H', '']]\n```\n\nNext, we will rotate the template twice more, aligning the template to place the remaining letters ('ANOS'):\n\n**Rotation 1:**\n\n```\n[[True, True, True, False],\n [True, True, True, True],\n [False, True, True, True],\n [False, False, True, True]]\n```\n\n**Rotation 2:**\n\n```\n[[True, False, False, True],\n [True, False, True, True],\n [True, True, True, True],\n [True, True, True, False]]\n```\n\nThe repeated rotations are necessary due to the cyclic nature of filling the template and applying it to the grid. Each rotation aligns the next 4 positions in the plaintext to be placed in the grid according to the template's holes.\n\nFor the rotations, we assume the process of filling in 'ANOS' in place of the remaining empty slots ('', '') in the updated grid:\n\n- For rotation 1, fill 'A' through the holes.\n\n- For rotation 2, fill 'N' through the holes.\n\nResuming the final grid with the current filled-in letters:\n\n```\n[['A', 'S', 'S', 'A'],\n ['R', 'R', 'H', ''],\n ['N', 'H', 'O', ''],\n ['A', 'N', 'S', 'O']]\n```\n\nAfter completing the steps for decryption,\n\nPlaintext: \"GZHYAWHHUASPLMPWMAUMSRHANOSXPWDBRIN\"\n\nFor the block \"MAUMSRHANOSXPWDB\", the decrypted grid (partial) has the letters:\n\n```\n[['A', 'S', 'S', 'A'],\n ['R', 'R', 'H', ''],\n ['N', 'H', 'O', ''],\n ['A', 'N', 'S', 'O']]\n```",
+        "response_text": "[['', '', '', ''],\n ['', '', 'M', 'A'],\n ['', '', '', ''],\n ['M', '', '', '']]",
+        "answer": "[['', 'S', 'R', ''], ['', 'H', 'M', 'A'], ['', '', '', 'U'], ['M', '', '', 'A']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[True, True, False, True], [False, True, True, True], [True, True, True, False], [True, True, True, True]]",
+        "response_text": "[[True, True, False, True], [False, True, True, True], [True, True, True, False], [True, True, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['M', 'A', 'U', 'M'], ['A', 'S', 'R', 'H'], ['M', 'A', 'U', 'N'], ['A', 'M', 'S', 'X']]",
+        "response_text": "[['M', 'A', 'U', 'M'], ['A', 'S', 'R', 'H'], ['M', 'A', 'U', 'N'], ['A', 'M', 'S', 'X']]",
+        "answer": "[['', 'S', 'R', 'N'], ['O', 'H', 'M', 'A'], ['S', 'X', '', 'U'], ['M', '', '', 'A']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[True, True, False, True], [False, True, True, True], [True, True, True, True], [True, False, False, True]]",
+        "response_text": "[[True, True, False, True], [False, True, True, True], [True, True, True, True], [True, False, False, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['A', 'M', 'A', 'S'], ['U', 'R', 'M', 'H'], ['A', '', 'N', 'O'], ['S', 'P', 'X', 'W']]",
+        "response_text": "[['A', 'M', 'A', 'S'], ['U', 'R', 'M', 'H'], ['A', '', 'N', 'O'], ['S', 'P', 'X', 'W']]",
+        "answer": "[['P', 'S', 'R', 'N'], ['O', 'H', 'M', 'A'], ['S', 'X', 'W', 'U'], ['M', 'D', 'B', 'A']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[[False, False, True, True], [True, False, False, True], [True, True, True, True], [True, True, True, False]]",
+        "response_text": "[[False, False, True, True], [True, False, False, True], [True, True, True, True], [True, True, True, False]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "39",
+        "response": "[['P', 'S', 'R', 'N'], ['O', 'H', 'M', 'A'], ['S', 'X', 'W', 'U'], ['M', 'D', 'B', 'A']]",
+        "response_text": "[['P', 'S', 'R', 'N'], ['O', 'H', 'M', 'A'], ['S', 'X', 'W', 'U'], ['M', 'D', 'B', 'A']]",
+        "answer": "[['P', 'S', 'R', 'N'], ['O', 'H', 'M', 'A'], ['S', 'X', 'W', 'U'], ['M', 'D', 'B', 'A']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[['', '', 'R', 'I'], ['', '', 'N', ''], ['', '', '', ''], [' ', ' ', ' ', '']]\n\n### Explanation:\nGiven the plaintext \"GZHYAWHHUASPLMPWMAUMSRHANOSXPWDBRIN\" and the specific block \"RIN\", along with the template and grid as described, the task is to fill the grid with the letters through the holes indicated by the template.\n\nTo start the process:\n1. The template has holes at positions (1, 3) and (4, 2) marked as `False` in the True-False format provided.\n2. Since these specified positions are marked as open, or `False`, we fill these positions on the grid according to the plaintext \"RIN\".\n\nFirst, we align the template over the grid:\n- Row 1 and 2 of the grid are left empty as they match the `True` values in the template.\n- For Row 3, index 3 (corresponding to the 'N' of \"RIN\") is marked as `False` and can be filled with 'N'.\n- For Row 4, we need to fill one character. Since it matches Row 3's `False` position, we keep it empty (`' '`).\n\nThe final grid after filling through the template holes for the block \"RIN\" is:\n\n[['', '', 'R', 'I'], ['', '', 'N', ''], ['', '', '', ''], [' ', ' ', ' ', '']]\n\nThis grid represents the filled state of the template on the grid following the specified encryption steps, completed for a single block of the plaintext.",
+        "response_text": "[['', '', 'R', 'I'], ['', '', 'N', ''], ['', '', '', ''], [' ', ' ', ' ', '']]",
+        "answer": "[['', '', '', ''], ['', '', 'R', 'I'], ['', '', '', 'N'], ['', '', '', '']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "39",
+        "response": "[['', '', '', '#'], ['', '', 'R', 'I'], ['', '', '', '#'], ['', '', '', '#']]",
+        "response_text": "[['', '', '', '#'], ['', '', 'R', 'I'], ['', '', '', '#'], ['', '', '', '#']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'R', 'I'], ['#', '#', '#', 'N'], ['#', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "40",
+        "response": "[[\"SECZAFVWIS\", \"MPVBNKNDCO\", \"UYEFGOHLYL\", \"LD######WT#\", \"###B####\"]]",
+        "response_text": "[[\"SECZAFVWIS\", \"MPVBNKNDCO\", \"UYEFGOHLYL\", \"LD######WT#\", \"###B####\"]]",
+        "answer": "[[SECZAFVWISMPVBNK,NDCOUYEFGOHLYLLD,######WT###B####]]",
+        "is_correct": false,
+        "type": "Partition"
+    },
+    {
+        "idx": "40",
+        "response": "[['S', 'E', 'C', 'Z'],\n ['A', 'F', 'V', 'W'],\n ['I', 'S', 'M', 'P'],\n ['V', 'B', 'N', 'K']]",
+        "response_text": "[['S', 'E', 'C', 'Z'],\n ['A', 'F', 'V', 'W'],\n ['I', 'S', 'M', 'P'],\n ['V', 'B', 'N', 'K']]",
+        "answer": "[['S', 'E', 'C', 'Z'], ['A', 'F', 'V', 'W'], ['I', 'S', 'M', 'P'], ['V', 'B', 'N', 'K']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "40",
+        "response": "[[A, W, V, V]]",
+        "response_text": "[[A, W, V, V]]",
+        "answer": "[[VWPV]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[False, True, True, True], [True, True, True, True], [True, True, False, False], [True, True, True, True]]",
+        "response_text": "[[False, True, True, True], [True, True, True, True], [True, True, False, False], [True, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[S, E, C], [A, F, V], [I, S, M], [B, N, K]]",
+        "response_text": "[[S, E, C], [A, F, V], [I, S, M], [B, N, K]]",
+        "answer": "[[ECFK]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[False, True, True, True], [True, False, False, True], [False, True, True, False], [True, True, True, True]]",
+        "response_text": "[[False, True, True, True], [True, False, False, True], [False, True, True, False], [True, True, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[\"W\", \"P\", \"V\", \"E\"]]",
+        "response_text": "[[\"W\", \"P\", \"V\", \"E\"]]",
+        "answer": "[[ZAIS]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[True, True, False, True], [True, True, True, False], [False, True, True, True], [True, False, True, True]]",
+        "response_text": "[[True, True, False, True], [True, True, True, False], [False, True, True, True], [True, False, True, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[None, 'I', 'S', None],\n ['W', 'P', 'V', 'E'],\n ['S', None, None, 'C'],\n ['K', 'V', 'F', None]]",
+        "response_text": "[[None, 'I', 'S', None],\n ['W', 'P', 'V', 'E'],\n ['S', None, None, 'C'],\n ['K', 'V', 'F', None]]",
+        "answer": "[[SMBN]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[True, False, False, True], [True, True, True, False], [True, True, True, True], [False, True, True, True]]",
+        "response_text": "[[True, False, False, True], [True, True, True, False], [True, True, True, True], [False, True, True, True]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[['N', 'D', 'C', 'O'], ['U', 'Y', 'E', 'F'], ['G', 'O', 'H', 'L'], ['Y', 'L', 'L', 'D']]",
+        "response_text": "[['N', 'D', 'C', 'O'], ['U', 'Y', 'E', 'F'], ['G', 'O', 'H', 'L'], ['Y', 'L', 'L', 'D']]",
+        "answer": "[['N', 'D', 'C', 'O'], ['U', 'Y', 'E', 'F'], ['G', 'O', 'H', 'L'], ['Y', 'L', 'L', 'D']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "40",
+        "response": "[[N, U, G, Y], [D, Y, O, L], [C, E, H, L], [O, F, L, D]]",
+        "response_text": "[[N, U, G, Y], [D, Y, O, L], [C, E, H, L], [O, F, L, D]]",
+        "answer": "[[EFLY]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[False, True, True, True], [False, True, True, True], [False, True, False, True], [True, True, True, True]]",
+        "response_text": "[[False, True, True, True], [False, True, True, True], [False, True, False, True], [True, True, True, True]]",
+        "answer": "[[True, False, False, True], [True, False, True, True], [True, True, True, True], [True, True, True, False]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[Y, L, L, D]]",
+        "response_text": "[[Y, L, L, D]]",
+        "answer": "[[DCYD]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[False, True, True, True], [True, True, False, True], [True, True, True, False], [True, False, True, True]]",
+        "response_text": "[[False, True, True, True], [True, True, False, True], [True, True, True, False], [True, False, True, True]]",
+        "answer": "[[True, True, True, False], [False, True, True, True], [False, False, True, True], [True, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[None, None, 'Y', 'D'], [None, 'Y', None, None], ['O', None, None, None], [None, 'D', None, None]]",
+        "response_text": "[[None, None, 'Y', 'D'], [None, 'Y', None, None], ['O', None, None, None], [None, 'D', None, None]]",
+        "answer": "[[OUGO]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[False, True, True, False], [True, True, True, True], [True, True, True, False], [False, True, True, True]]",
+        "response_text": "[[False, True, True, False], [True, True, True, True], [True, True, True, False], [False, True, True, True]]",
+        "answer": "[[False, True, True, True], [True, True, True, True], [True, True, False, True], [True, False, False, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[[U, O, L], [Y, L], [G, O], [D, D]]",
+        "response_text": "[[U, O, L], [Y, L], [G, O], [D, D]]",
+        "answer": "[[NHLL]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "40",
+        "response": "[[True, True, True, True], [False, True, True, True], [True, True, True, False], [True, True, False, False]]",
+        "response_text": "[[True, True, True, True], [False, True, True, True], [True, True, True, False], [True, True, False, False]]",
+        "answer": "[[True, True, True, True], [True, True, False, False], [True, True, True, False], [False, True, True, True]]",
+        "is_correct": false,
+        "type": "Rotation"
+    },
+    {
+        "idx": "40",
+        "response": "[['W', 'T', '', ''],\n ['#', '#', '#', '#'],\n ['#', '#', '#', '#'],\n ['#', '#', '#', 'B']]",
+        "response_text": "[['W', 'T', '', ''],\n ['#', '#', '#', '#'],\n ['#', '#', '#', '#'],\n ['#', '#', '#', 'B']]",
+        "answer": "[['#', '#', '#', '#'], ['#', '#', 'W', 'T'], ['#', '#', '#', 'B'], ['#', '#', '#', '#']]",
+        "is_correct": false,
+        "type": "Conditional Filling"
+    },
+    {
+        "idx": "40",
+        "response": "[[T, W, B, #]]",
+        "response_text": "[[T, W, B, #]]",
+        "answer": "[[WTB#]]",
+        "is_correct": false,
+        "type": "Conditional Reading"
+    },
+    {
+        "idx": "41",
+        "response": "[[77]]",
+        "response_text": "[[77]]",
+        "answer": "[[77]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "41",
+        "response": "[[123865]]",
+        "response_text": "[[123865]]",
+        "answer": "[[233]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "42",
+        "response": "[136]",
+        "response_text": "[[136]]",
+        "answer": "[[75]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "42",
+        "response": "[[75]]",
+        "response_text": "[[75]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "43",
+        "response": "[75]",
+        "response_text": "[[75]]",
+        "answer": "[[67]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "43",
+        "response": "[67^263 mod 299]",
+        "response_text": "[[67^263 mod 299]]",
+        "answer": "[[241]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "44",
+        "response": "[[16]]",
+        "response_text": "[[16]]",
+        "answer": "[[75]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "44",
+        "response": "[[P]]",
+        "response_text": "[[P]]",
+        "answer": "[[K]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "45",
+        "response": "[122]",
+        "response_text": "[[122]]",
+        "answer": "[[90]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "45",
+        "response": "[[55]]",
+        "response_text": "[[55]]",
+        "answer": "[[103]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "46",
+        "response": "[[54^263 mod 299]]",
+        "response_text": "[[54^263 mod 299]]",
+        "answer": "[[72]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "46",
+        "response": "[[72]]",
+        "response_text": "[[72]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "47",
+        "response": "[[69]]",
+        "response_text": "[[69]]",
+        "answer": "[[69]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "47",
+        "response": "[631]",
+        "response_text": "[[631]]",
+        "answer": "[[23]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "47",
+        "response": "[[111]]",
+        "response_text": "[[111]]",
+        "answer": "[[79]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "47",
+        "response": "[[190]]",
+        "response_text": "[[190]]",
+        "answer": "[[53]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "48",
+        "response": "[37336]",
+        "response_text": "[[37336]]",
+        "answer": "[[86]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "48",
+        "response": "[[p]]",
+        "response_text": "[[p]]",
+        "answer": "[[V]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "48",
+        "response": "[[202]]",
+        "response_text": "[[202]]",
+        "answer": "[[82]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "48",
+        "response": "[[O]]",
+        "response_text": "[[O]]",
+        "answer": "[[R]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[75]]",
+        "response_text": "[[75]]",
+        "answer": "[[85]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[8306]]",
+        "response_text": "[[8306]]",
+        "answer": "[[197]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[83]]",
+        "response_text": "[[83]]",
+        "answer": "[[83]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[(83^263) mod 299]]",
+        "response_text": "[[(83^263) mod 299]]",
+        "answer": "[[281]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[85]]",
+        "response_text": "[[85]]",
+        "answer": "[[76]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[117, 53]]",
+        "response_text": "[[117, 53]]",
+        "answer": "[[240]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[116]]",
+        "response_text": "[[116]]",
+        "answer": "[[84]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[84^263 mod 299]",
+        "response_text": "[[84^263 mod 299]]",
+        "answer": "[[89]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[82]]",
+        "response_text": "[[82]]",
+        "answer": "[[82]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[(82^263) % 299]]",
+        "response_text": "[[(82^263) % 299]]",
+        "answer": "[[62]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[112]",
+        "response_text": "[[112]]",
+        "answer": "[[80]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[80^263 mod 299]]",
+        "response_text": "[[80^263 mod 299]]",
+        "answer": "[[228]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[85]]",
+        "response_text": "[[85]]",
+        "answer": "[[73]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[140, 251]]",
+        "response_text": "[[140, 251]]",
+        "answer": "[[213]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[86]]",
+        "response_text": "[[86]]",
+        "answer": "[[86]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[86^263 mod 299]",
+        "response_text": "[[86^263 mod 299]]",
+        "answer": "[[226]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[101]]",
+        "response_text": "[[101]]",
+        "answer": "[[73]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[73^263 mod 299]",
+        "response_text": "[[73^263 mod 299]]",
+        "answer": "[[213]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[85]",
+        "response_text": "[[85]]",
+        "answer": "[[85]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[85^263 mod 299]]",
+        "response_text": "[[85^263 mod 299]]",
+        "answer": "[[197]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "49",
+        "response": "[[121]]",
+        "response_text": "[[121]]",
+        "answer": "[[84]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "49",
+        "response": "[[8, 176, 100, 57, 252, 109, 82]]",
+        "response_text": "[[8, 176, 100, 57, 252, 109, 82]]",
+        "answer": "[[89]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[z_value]]",
+        "response_text": "[[z_value]]",
+        "answer": "[[88]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[L]]",
+        "response_text": "[[L]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[54]]",
+        "response_text": "[[54]]",
+        "answer": "[[78]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[L]]",
+        "response_text": "[[L]]",
+        "answer": "[[N]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[512]]",
+        "response_text": "[[512]]",
+        "answer": "[[75]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[K]]",
+        "response_text": "[[K]]",
+        "answer": "[[K]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[54^263 mod 299]]",
+        "response_text": "[[54^263 mod 299]]",
+        "answer": "[[72]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[66]",
+        "response_text": "[[66]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "```\n[[54]]\n```",
+        "response_text": "[[54]]",
+        "answer": "[[73]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[N]]",
+        "response_text": "[[N]]",
+        "answer": "[[I]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[z]] = [17^263 mod 299]",
+        "response_text": "[[z]]",
+        "answer": "[[88]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[P]]",
+        "response_text": "[[P]]",
+        "answer": "[[X]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[(23)^263 mod 299]]",
+        "response_text": "[[(23)^263 mod 299]]",
+        "answer": "[[69]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[P]]",
+        "response_text": "[[P]]",
+        "answer": "[[E]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[84^263 mod 299]]",
+        "response_text": "[[84^263 mod 299]]",
+        "answer": "[[89]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[C]]",
+        "response_text": "[[C]]",
+        "answer": "[[Y]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[377]]",
+        "response_text": "[[377]]",
+        "answer": "[[80]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[P]]",
+        "response_text": "[[P]]",
+        "answer": "[[P]]",
+        "is_correct": true,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "To find the value of z, we need to compute \\( z = c^e \\mod n \\) where:\n\n- \\( c = 54 \\)\n- \\( e = 263 \\)\n- \\( n = 299 \\)\n\nLet's perform the calculation:\n\n\\[ z = 54^{263} \\mod 299 \\]\n\nUsing modular exponentiation, the calculation yields:\n\n\\[ z = [34] \\]\n\nThus, the value of z for the given number c in the ciphertext is [34].",
+        "response_text": "[[z = 54^{263} \\mod 299 \\]]",
+        "answer": "[[72]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[71]]",
+        "response_text": "[[71]]",
+        "answer": "[[H]]",
+        "is_correct": false,
+        "type": "Encoding"
+    },
+    {
+        "idx": "50",
+        "response": "[[281^263 mod 299]]",
+        "response_text": "[[281^263 mod 299]]",
+        "answer": "[[83]]",
+        "is_correct": false,
+        "type": "Computation"
+    },
+    {
+        "idx": "50",
+        "response": "[[\\\"I\\\"]]]",
+        "response_text": "[[\\\"I\\\"]]",
+        "answer": "[[S]]",
+        "is_correct": false,
+        "type": "Encoding"
+    }
+]
