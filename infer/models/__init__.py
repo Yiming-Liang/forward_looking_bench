@@ -126,10 +126,17 @@ model_configs = {
         'call_type': 'local',
         'tp': 4
     },
+    # 'Qwen2.5-7B-Instruct': {
+    #     'load': ('.hf_causallm_chat', 'load_model'),
+    #     'infer': ('.hf_causallm_chat', 'infer'),
+    #     'model_path_or_name': 'Qwen/Qwen2.5-7B-Instruct',
+    #     'call_type': 'local',
+    #     'tp': 4
+    # },
     'Qwen2.5-7B-Instruct': {
         'load': ('.hf_causallm_chat', 'load_model'),
         'infer': ('.hf_causallm_chat', 'infer'),
-        'model_path_or_name': 'Qwen/Qwen2.5-7B-Instruct',
+        'model_path_or_name': '/map-vepfs/yiming/simpleRL_hdfs/model_hub/Qwen2.5-7B-Instruct',
         'call_type': 'local',
         'tp': 4
     },

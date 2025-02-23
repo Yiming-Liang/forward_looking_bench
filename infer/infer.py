@@ -101,7 +101,9 @@ def main(model_name='gpt4o', splits=[], modes=[], output_dir='results', infer_li
                         futures.append(executor.submit(infer_batch, model_components, model_name, batch))
 
                     for prompt, sample in tqdm(load_data(split=split, mode=mode), desc=f'Processing {split} {mode} data'):
-                        sample[config_wrapper.prompt_key] = prompt
+                        # sample[config_wrapper.prompt_key] = prompt
+                        sample[config_wrapper.prompt_key] = prompt + sample['question'] if prompt else sample['question']
+                        # print(sample)
                         if config_wrapper.get_id(sample) in merged:
                             sample = merged[config_wrapper.get_id(sample)]
                             write_jsonl_lines(temp_file, sample)
@@ -158,7 +160,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_name', type=str, default='', help='Model name to use')
     parser.add_argument('--config', type=str, default='config/config.yaml', help='Config file to use')
     parser.add_argument('--split', nargs='+', default=[], help='Data split to use')
-    parser.add_argument('--mode', nargs='+', default=[], help='Modes to use for data loading, separated by space')
+    parser.add_argument('--mode', nargs='+', default=[], help='Modes to use for data loading, separated by space. Choose from different evaluation modes (zero-shot, three-shot, etc.). Default is to evaluate all modes.')
     parser.add_argument('--output_dir', type=str, default='results', help='Directory to write results')
     parser.add_argument('--infer_limit', type=int, help='Limit the number of inferences per run, default is no limit', default=None)
     parser.add_argument('--num_workers', type=int, default=1, help='Number of concurrent workers for inference, currently only used for API')
